@@ -22,6 +22,22 @@
   margin: auto;
 }
 
+.nav {
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+}
+
+.allcontent {
+  margin-top: 70px;
+  position: relative;
+  z-index: 0;
+}
+
+.sidebar {
+  position: fixed;
+}
+
 .flex {
   display: flex;
 }
@@ -106,6 +122,10 @@
   padding: 16px;
 }
 
+.pt-4 {
+  padding-top: 16px;
+}
+
 .p-6 {
   padding: 24px;
 }
@@ -120,6 +140,18 @@
 
 .mt-8 {
   margin-top: 28px;
+}
+
+.mt-12 {
+  margin-top: 48px;
+}
+
+.mb-8 {
+  margin-bottom: 28px;
+}
+
+.mb-12 {
+  margin-bottom: 48px;
 }
 
 .mt-10 {
@@ -164,8 +196,12 @@
   left: 10px;
 }
 
+.rightsearch {
+  right: 40px;
+}
+
 .topsearch {
-  top: 10px;
+  top: 8px;
 }
 
 .pl10 {
@@ -204,6 +240,21 @@
   width: 136px;
 }
 .cdesign:hover {
+  background-color: #9e77f3;
+}
+
+.flyerdesign {
+  text-align: center;
+  color: white;
+  background-color: #8b3dff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 180px;
+  font-weight: 600;
+}
+.flyerdesign:hover {
   background-color: #9e77f3;
 }
 
@@ -354,6 +405,26 @@
   width: 245px;
 }
 
+.box5 {
+  width: 215px;
+  height: 300px;
+}
+
+.box6 {
+  width: 256px;
+  height: 256px;
+}
+
+.box7 {
+  width: 455px;
+  height: 256px;
+}
+
+.box13 {
+  width: 361px;
+  height: 256px;
+}
+
 .width {
   width: 150px;
 }
@@ -392,14 +463,7 @@
 }
 
 :root {
-  --swiper-theme-color: black!important;
-}
-
-.sbn {
-  width: 40px;
-  height: 40px;
-  background-color: red;
-  border: 1px solid black;
+  --swiper-theme-color: black !important;
 }
 
 .createblank {
@@ -460,4 +524,349 @@
   font-weight: 700;
   font-size: 24px;
   color: #0d1216;
+}
+
+.business-arrow {
+  transform: rotate(-90deg);
+  margin-top: 5px;
+}
+
+.businessdesign {
+  text-align: center;
+  color: #0d1216;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 244px;
+  font-weight: 400;
+  background-color: white;
+}
+.businessdesign:hover {
+  background-color: rgba(123, 151, 181, 0.15);
+}
+
+.christmas {
+  background-color: rgba(123, 151, 181, 0.15);
+  text-align: center;
+  color: #0d1216;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.christmas:hover {
+  background-color: rgba(57, 76, 96, 0.15);
+}
+
+.cvchristmas {
+  text-align: center;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  background: rgba(13, 18, 22, 0.7) !important;
+}
+
+.flyer {
+  background-color: rgba(255, 226, 174, 0.25);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.1));
+  max-width: 1567px;
+  width: 100%;
+}
+
+.trend {
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #0d1216;
+}
+
+.border-b {
+  width: 120px;
+  border-bottom: 2px solid #713adf;
+  padding-bottom: 5px;
+}
+
+.width1 {
+  width: 340px !important;
+}
+
+.width6 {
+  width: 455px !important;
+}
+
+.cvnav {
+  height: 80px;
+}
+
+.cvarrow {
+  transform: rotate(90deg);
+}
+
+.newarrow {
+  color: hsla(0deg, 0%, 100%, 0.4);
+}
+
+.docscv {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  margin-top: -3px;
+  cursor: pointer;
+}
+
+.searchcv {
+  max-width: 351px;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+}
+
+.cvdesing {
+  text-align: center;
+  color: #0d1216;
+  background-color: hsla(0deg, 0%, 100%, 0.15);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 143px;
+  font-weight: 600;
+}
+.cvdesing:hover {
+  background-color: hsla(0deg, 0%, 100%, 0.07);
+}
+
+.cvdesing p {
+  color: white;
+}
+
+.share {
+  text-align: center;
+  color: #0d1216;
+  background-color: hsla(0deg, 0%, 100%, 0.95);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+  font-weight: 600;
+}
+.share:hover {
+  background-color: white;
+}
+
+.plus {
+  cursor: pointer;
+  color: white;
+  width: 40px;
+  height: 40px;
+  background-color: hsla(0deg, 0%, 100%, 0.15);
+  border-radius: 100%;
+}
+.plus:hover {
+  background-color: hsla(0deg, 0%, 100%, 0.07);
+}
+
+.stats {
+  cursor: pointer;
+  color: white;
+  width: 40px;
+  height: 40px;
+  background-color: hsla(0deg, 0%, 100%, 0.15);
+  border-radius: 100%;
+}
+.stats:hover {
+  background-color: hsla(0deg, 0%, 100%, 0.07);
+}
+
+.statscolor {
+  color: white;
+}
+
+::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.place::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0d1216;
+  opacity: 1; /* Firefox */
+}
+
+.place:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0d1216;
+  opacity: 1; /* Firefox */
+}
+
+.place::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0d1216;
+  opacity: 1; /* Firefox */
+}
+
+.colorwhite {
+  color: white;
+}
+
+.minibar {
+  background: rgba(13, 18, 22, 0.92);
+  width: 100px;
+  height: 100vh;
+  position: relative;
+}
+
+.minibar p {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.minibarparent {
+  top: 80px;
+}
+
+.navresume {
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+}
+
+.tempcolor {
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.tempcolor1 {
+  color: hsla(0deg, 0%, 100%, 0.9);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.tempcolor1:hover {
+  color: white;
+}
+
+.maxsidebar {
+  background-color: rgba(13, 18, 22, 0.9);
+  max-width: 380px;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  height: 900px;
+}
+
+/* Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+.maxsidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Handle */
+.maxsidebar::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.maxsidebar::-webkit-scrollbar-thumb:hover {
+  background: #2a2f36;
+}
+
+.rused {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.rounded-div {
+  width: 15px;
+  height: 70px;
+  background-color: rgba(13, 18, 22, 0.9);
+  z-index: 300;
+  position: fixed;
+  left: 480px;
+  top: 50%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  margin-top: 18px;
+  margin-left: -3px;
+}
+
+.gray {
+  background: #e5e7eb;
+  height: 100vh;
+}
+
+.animate {
+  background: white;
+  height: 40px;
+}
+
+.animate p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.framer {
+  color: black;
+}
+
+.cvsection {
+  max-width: 456px;
+  width: 100%;
+}
+
+.cvsection p {
+  color: #0d1216;
+}
+
+.message {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.add {
+  background: rgba(64, 87, 109, 0.07);
+  text-align: center;
+  color: #0d1216;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 456px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.add:hover {
+  background: rgba(64, 87, 109, 0.02);
 }/*# sourceMappingURL=main.css.map */

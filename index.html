@@ -12,10 +12,11 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="p-6 flex justify-between items-center gap4 w-full">
+    <nav class="p-6 flex justify-between items-center gap4 w-full nav">
       <div class="flex gap8">
         <div class="flex items-center gap8">
           <svg
+            style="cursor: pointer"
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-menu-2"
             width="24"
@@ -179,9 +180,9 @@
     </nav>
     <hr class="w-full hr" />
     <!-- sidebar -->
-    <div class="flex gap4 pr-4">
+    <div class="flex gap4 pr-4 allcontent">
       <div class="mt-4 p-6">
-        <div class="flex flex-dir justify-between items-start">
+        <div class="flex flex-dir justify-between items-start sidebar">
           <div aria-label="one">
             <div class="sidearea flex gap4">
               <img
@@ -494,7 +495,8 @@
         </div>
         <div
           aria-label="two"
-          class="flex justify-end items-end flex-dir mt-40 h-screen"
+          class="flex justify-end items-end flex-dir sidebar"
+          style="margin-top: 730px"
         >
           <div class="mt-2">
             <button class="flex tempdesing p-3 items-center justify-start gap4">
@@ -519,7 +521,7 @@
                 <line x1="9" y1="15" x2="9" y2="15.01" />
                 <line x1="9" y1="18" x2="9" y2="18.01" />
               </svg>
-              Creat a team
+              Create a team
             </button>
           </div>
           <div class="mt-2">
@@ -550,7 +552,7 @@
       </div>
       <!-- end -->
       <!-- center -->
-      <div class="relative w-full mt-8">
+      <div class="relative w-full mt-8 py-4" style="margin-left: 250px">
         <div class="absolute">
           <img
             class="rounded w-full"
