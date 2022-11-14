@@ -5,6 +5,10 @@
 }
 $text-black: #0d1216;
 $bg-white: white;
+$bg-hsla: hsla(0, 0%, 100%, 0.9);
+$bg-purple: #8b3dff;
+$rgba-seven: rgba(64, 87, 109, 0.07);
+$rgba-five: rgba(57, 76, 96, 0.15);
 // @import "/np/mix";
 @import "mix";
 // FOR EXAMPLE
@@ -34,11 +38,6 @@ $bg-white: white;
 .sidebar {
   position: fixed;
 }
-
-// .flexmix{
-//     @include flexis;
-// }
-
 .flex {
   display: flex;
 }
@@ -136,8 +135,10 @@ $bg-white: white;
   padding-top: 16px;
   padding-bottom: 16px;
 }
+.pb-4 {
+  padding-bottom: 16px;
+}
 .pr-4 {
-  // padding-left: 16px;
   padding-right: 16px;
 }
 .hr {
@@ -188,7 +189,7 @@ $bg-white: white;
 .cdesign {
   text-align: center;
   color: $bg-white;
-  background-color: #8b3dff;
+  background-color: $bg-purple;
   border: none;
   outline: none;
   cursor: pointer;
@@ -201,7 +202,7 @@ $bg-white: white;
 .flyerdesign {
   text-align: center;
   color: $bg-white;
-  background-color: #8b3dff;
+  background-color: $bg-purple;
   border: none;
   outline: none;
   cursor: pointer;
@@ -223,13 +224,13 @@ $bg-white: white;
   width: 244px;
   font-weight: 600;
   &:hover {
-    background-color: rgba(57, 76, 96, 0.15);
+    background-color: $rgba-five;
   }
 }
 .homedesing {
   text-align: center;
   color: $text-black;
-  background-color: rgba(57, 76, 96, 0.15);
+  background-color: $rgba-five;
   border: none;
   outline: none;
   cursor: pointer;
@@ -237,7 +238,7 @@ $bg-white: white;
   width: 244px;
   font-weight: 600;
   &:hover {
-    background-color: rgba(57, 76, 96, 0.15);
+    background-color: $rgba-five;
   }
 }
 .tempdesing {
@@ -280,9 +281,8 @@ $bg-white: white;
   height: 20px;
 }
 .thanks p {
-  color: hsla(0, 0%, 100%, 0.9);
+  color: $bg-hsla;
   text-align: center;
-  // font-size: 3.2rem;
   font-size: 32px;
   line-height: 1.3;
   font-weight: 600;
@@ -302,9 +302,8 @@ $bg-white: white;
     transition: 1s;
   }
 }
-
 .foryou {
-  color: hsla(0, 0%, 100%, 0.9);
+  color: $bg-hsla;
   font-weight: 600;
   margin-top: 5px;
   font-size: 12px;
@@ -333,11 +332,11 @@ $bg-white: white;
   font-size: 18px;
 }
 .box1 {
-  background-color: rgba(64, 87, 109, 0.07);
+  background-color: $rgba-seven;
   width: 192px;
 }
 .box2 {
-  background-color: rgba(64, 87, 109, 0.07);
+  background-color: $rgba-seven;
   width: 245px;
 }
 .box5 {
@@ -377,7 +376,6 @@ $bg-white: white;
   text-align: center;
   font-size: 18px;
   background: #fff;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,7 +390,6 @@ $bg-white: white;
   -webkit-align-items: center;
   align-items: center;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -426,14 +423,13 @@ $bg-white: white;
 .watch {
   text-align: center;
   color: $text-black;
-  // background-color: rgba(57,76,96,0.15);
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 5px;
   width: 166px;
   font-weight: 400;
-  background-color: rgba(57, 76, 96, 0.15);
+  background-color: $rgba-five;
 }
 .docs {
   color: $text-black;
@@ -486,12 +482,12 @@ $bg-white: white;
   border-radius: 5px;
   font-weight: 500;
   &:hover {
-    background-color: rgba(57, 76, 96, 0.15);
+    background-color: $rgba-five;
   }
 }
 .cvchristmas {
   text-align: center;
-  color: white;
+  color: $bg-white;
   border: none;
   outline: none;
   cursor: pointer;
@@ -539,7 +535,7 @@ $bg-white: white;
 }
 .docscv {
   font-size: 14px;
-  color: white;
+  color: $bg-white;
   font-weight: 600;
   margin-top: -3px;
   cursor: pointer;
@@ -547,9 +543,7 @@ $bg-white: white;
 .searchcv {
   max-width: 351px;
   width: 100%;
-  // outline: 1px solid white;
   background-color: transparent;
-  // border: none;
   color: $bg-white;
 }
 .cvdesing {
@@ -562,14 +556,13 @@ $bg-white: white;
   border-radius: 5px;
   width: 143px;
   font-weight: 600;
+  p {
+    color: $bg-white;
+  }
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
   }
 }
-.cvdesing p {
-  color: $bg-white;
-}
-
 .share {
   text-align: center;
   color: $text-black;
@@ -581,12 +574,12 @@ $bg-white: white;
   width: 100px;
   font-weight: 600;
   &:hover {
-    background-color: white;
+    background-color: $bg-white;
   }
 }
 .plus {
   cursor: pointer;
-  color: white;
+  color: $bg-white;
   width: 40px;
   height: 40px;
   background-color: hsla(0, 0%, 100%, 0.15);
@@ -597,7 +590,7 @@ $bg-white: white;
 }
 .stats {
   cursor: pointer;
-  color: white;
+  color: $bg-white;
   width: 40px;
   height: 40px;
   background-color: hsla(0, 0%, 100%, 0.15);
@@ -607,17 +600,21 @@ $bg-white: white;
   }
 }
 .statscolor {
-  color: white;
+  color: $bg-white;
 }
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color: $bg-white;
   opacity: 1; /* Firefox */
 }
 .place::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: $text-black;
-
+  opacity: 1; /* Firefox */
+}
+.search::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $text-black;
   opacity: 1; /* Firefox */
 }
 .colorwhite {
@@ -628,12 +625,11 @@ $bg-white: white;
   width: 100px;
   height: 100vh;
   position: relative;
-  // top: 40px;
-}
-.minibar p {
-  color: white;
-  font-size: 12px;
-  font-weight: 400;
+  p {
+    color: $bg-white;
+    font-size: 12px;
+    font-weight: 400;
+  }
 }
 .minibarparent {
   top: 80px;
@@ -644,16 +640,16 @@ $bg-white: white;
   z-index: 200;
 }
 .tempcolor {
-  color: white;
+  color: $bg-white;
   margin-top: 20px;
   cursor: pointer;
 }
 .tempcolor1 {
-  color: hsla(0, 0%, 100%, 0.9);
+  color: $bg-hsla;
   margin-top: 20px;
   cursor: pointer;
   &:hover {
-    color: white;
+    color: $bg-white;
   }
 }
 .maxsidebar {
@@ -664,7 +660,6 @@ $bg-white: white;
   overflow-x: hidden;
   height: 900px;
 }
-
 /* Scroll */
 html {
   scroll-behavior: smooth;
@@ -683,7 +678,7 @@ html {
   background: #2a2f36;
 }
 .rused {
-  color: white;
+  color: $bg-white;
   font-weight: 600;
   font-size: 14px;
 }
@@ -705,16 +700,23 @@ html {
 }
 .gray {
   background: #e5e7eb;
-  height: 100vh;
-  // color: rgb(243 244 246);
+  // height: 100vh;
 }
 .animate {
-  background: white;
+  background: $bg-white;
   height: 40px;
+  p {
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
-.animate p {
-  font-size: 14px;
-  font-weight: 600;
+.notes {
+  background: $bg-white;
+  min-height: 40px;
+  p {
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
 .framer {
   color: black;
@@ -722,19 +724,18 @@ html {
 .cvsection {
   max-width: 456px;
   width: 100%;
-}
-.cvsection p {
-  color: $text-black;
+  p {
+    color: $text-black;
+  }
 }
 .message {
   width: 40px;
   height: 40px;
-  background-color: white;
+  background-color: $bg-white;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 .add {
-  // display: none;
-  background: rgba(64, 87, 109, 0.07);
+  background: $rgba-seven;
   text-align: center;
   color: $text-black;
   border: none;
@@ -744,6 +745,52 @@ html {
   font-weight: 600;
   cursor: pointer;
   &:hover {
-    background: rgba(64, 87, 109, 0.02);
+    background: rgba(64, 87, 109, 0.09);
   }
+}
+.smallborder{
+  height: 20px;
+  width: 0.5px;
+  border: 1px solid #434343 ;
+}
+// inout type range
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="range"] {
+    overflow: hidden;
+    width: 216px;
+    height: 2px;
+    -webkit-appearance: none;
+    background-color: rgb(247, 240, 240);
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #434343;
+    margin-top: -1px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    -webkit-appearance: none;
+    height: 20x;
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -80px 0 0 80px #434343;;
+  }
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #434343;
+}
+input[type="range"]::-moz-range-track {
+  background-color: white;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #434343;;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: white;
 }
