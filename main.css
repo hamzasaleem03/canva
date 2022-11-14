@@ -1061,4 +1061,13 @@ input[type=range]::-ms-fill-upper {
   background: white;
   position: absolute;
   top: 95px;
+}
+
+.for2 {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background: white;
+  position: absolute;
+  top: 130px;
 }/*# sourceMappingURL=main.css.map */
