@@ -14,25 +14,27 @@
   <body>
     <nav class="p-6 flex justify-between items-center gap4 w-full nav">
       <div class="flex gap8">
-        <div class="flex items-center gap8">
-          <svg
-            style="cursor: pointer"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-menu-2"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#000000"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <line x1="4" y1="6" x2="20" y2="6" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="18" x2="20" y2="18" />
-          </svg>
+        <div  class="flex items-center gap8">
+          <div onclick="toggle();" >
+            <svg
+              style="cursor: pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-2"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </div>
           <img
             src="https://static.canva.com/web/images/c312071b10daa85e10047f326751843d.svg"
             alt="canva"
@@ -181,7 +183,7 @@
     <hr class="w-full hr" />
     <!-- sidebar -->
     <div class="flex gap4 pr-4 allcontent">
-      <div class="mt-4 p-6">
+      <div id="sider" class="mt-4 p-6">
         <div class="flex flex-dir justify-between items-start sidebar">
           <div aria-label="one">
             <div class="sidearea flex gap4">
@@ -552,13 +554,37 @@
       </div>
       <!-- end -->
       <!-- center -->
-      <div class="relative w-full mt-8 py-4" style="margin-left: 250px">
-        <div class="absolute">
+      <div id="r-div" class="relative w-full mt-8 py-4" style="margin-left: 220px" id="center">
+        <div class="absolute" id="widthfunc">
           <img
-            class="rounded w-full"
-            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/mainimage2323.png"
-            alt="main"
+          class="rounded w-full"
+          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/mainimage2323.png"
+          alt="main"
           />
+        </div>
+        <div class=" rounded-sm flex justify-center items-center bicon-p">
+          
+          <svg class="blueicon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-search"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path stroke="none" d="M7.75 5V3a.75.75 0 0 0-1.5 0v2h1.5zm0 4v6.75c0 .14.11.25.25.25h7.01v1.5H8c-.97 0-1.75-.78-1.75-1.75V9h1.5zm11.26 7h1.97a.75.75 0 0 1 0 1.5H19V16zm-1.25 4.78a.75.75 0 1 1-1.5 0V8a.25.25 0 0 0-.25-.25H3a.75.75 0 0 1 0-1.5h13.01c.97 0 1.75.78 1.75 1.75v12.78z" fill="currentColor" />
+        </svg>
+        </div>
+        <div class=" rounded-sm flex justify-center items-center bicon-p1">
+          
+          <svg class="blueicon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-search"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+        <path stroke="none" d="M12.75 13.81v7.44a.75.75 0 1 1-1.5 0v-7.4L9.49 15.6a.75.75 0 1 1-1.06-1.06l2.35-2.36c.68-.68 1.8-.68 2.48 0l2.35 2.36a.75.75 0 1 1-1.06 1.06l-1.8-1.8zM9 18v1.5H6.75v-.01A5.63 5.63 0 0 1 5.01 8.66a6 6 0 0 1 11.94-.4 5.63 5.63 0 0 1 .3 11.23v.01H15V18h1.88a4.12 4.12 0 1 0-1.5-7.97A4.51 4.51 0 0 0 11 4.5a4.5 4.5 0 0 0-4.43 5.29 4.13 4.13 0 0 0 .68 8.2V18H9z" fill="currentColor" />
+      </svg>
         </div>
         <div class="flex justify-center items-center flex-dir mt-4">
           <div class="relative thanks">
@@ -598,23 +624,26 @@
         </div>
         <div class="relative flex justify-center items-center gap12 mt-8">
           <div class="mt-4 flex justify-center items-center flex-dir">
-            <div class="circle rounded-full flex justify-center items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-star"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="currentColor"
-              >
-                <path
-                  stroke="none"
-                  d="M11.26 7.49c0-.36-.35-.45-.35-.45-1.55-.49-2.49-1.43-2.98-2.99 0 0-.06-.34-.45-.34-.38 0-.44.34-.44.34-.49 1.56-1.42 2.5-2.98 2.99 0 0-.35.09-.35.45s.35.45.35.45c1.56.49 2.49 1.43 2.98 2.99 0 0 .06.34.45.34.38-.01.45-.34.45-.34.49-1.56 1.42-2.5 2.98-2.99 0 .01.34-.08.34-.45 0 .01 0 .01 0 0zm17.06 8.46c0-.53-.44-.88-.94-1 0 0-3.96-1.34-5.43-2.25-.98-.48-1.91-1.45-2.5-2.41v.01c-.89-1.16-2.39-5.73-2.39-5.73-.18-.59-.52-.93-1.05-.94v.04L16 3.63c-.53 0-.88.44-1 .94 0 0-1.34 3.96-2.25 5.43-.48.98-1.45 1.91-2.41 2.5h.01c-1.16.89-5.73 2.39-5.73 2.39-.59.18-.93.52-.94 1.05l.06.01h-.06c0 .53.44.88.94 1 0 0 3.96 1.34 5.43 2.25.98.48 1.91 1.45 2.5 2.41v-.01c.89 1.16 2.39 5.73 2.39 5.73.18.59.52.93 1.05.94l.01-.07.01.07c.53 0 .88-.44 1-.94 0 0 1.34-3.96 2.25-5.43.48-.98 1.45-1.91 2.41-2.5h-.01c1.16-.89 5.73-2.39 5.73-2.39.59-.18.93-.52.94-1.05l-.08-.01h.07zm-.26 8.99c-.47-.24-.92-.58-1.31-.97s-.73-.85-.97-1.31c0 0-.11-.24-.39-.24s-.39.24-.39.24c-.24.47-.58.92-.97 1.31s-.85.73-1.31.97c0 0-.24.11-.24.39s.24.39.24.39c.47.24.92.58 1.31.97s.73.85.97 1.31c0 0 .11.24.39.24s.39-.24.39-.24c.24-.47.58-.92.97-1.31s.85-.73 1.31-.97c0 0 .24-.11.24-.39s-.24-.39-.24-.39z"
+            <a href="./index.html" class="underline-none">
+              <div class="circle rounded-full flex justify-center items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-star"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
                   fill="currentColor"
-                />
-              </svg>
-            </div>
-            <p class="foryou">For you</p>
+                >
+                  <path
+                    stroke="none"
+                    d="M11.26 7.49c0-.36-.35-.45-.35-.45-1.55-.49-2.49-1.43-2.98-2.99 0 0-.06-.34-.45-.34-.38 0-.44.34-.44.34-.49 1.56-1.42 2.5-2.98 2.99 0 0-.35.09-.35.45s.35.45.35.45c1.56.49 2.49 1.43 2.98 2.99 0 0 .06.34.45.34.38-.01.45-.34.45-.34.49-1.56 1.42-2.5 2.98-2.99 0 .01.34-.08.34-.45 0 .01 0 .01 0 0zm17.06 8.46c0-.53-.44-.88-.94-1 0 0-3.96-1.34-5.43-2.25-.98-.48-1.91-1.45-2.5-2.41v.01c-.89-1.16-2.39-5.73-2.39-5.73-.18-.59-.52-.93-1.05-.94v.04L16 3.63c-.53 0-.88.44-1 .94 0 0-1.34 3.96-2.25 5.43-.48.98-1.45 1.91-2.41 2.5h.01c-1.16.89-5.73 2.39-5.73 2.39-.59.18-.93.52-.94 1.05l.06.01h-.06c0 .53.44.88.94 1 0 0 3.96 1.34 5.43 2.25.98.48 1.91 1.45 2.5 2.41v-.01c.89 1.16 2.39 5.73 2.39 5.73.18.59.52.93 1.05.94l.01-.07.01.07c.53 0 .88-.44 1-.94 0 0 1.34-3.96 2.25-5.43.48-.98 1.45-1.91 2.41-2.5h-.01c1.16-.89 5.73-2.39 5.73-2.39.59-.18.93-.52.94-1.05l-.08-.01h.07zm-.26 8.99c-.47-.24-.92-.58-1.31-.97s-.73-.85-.97-1.31c0 0-.11-.24-.39-.24s-.39.24-.39.24c-.24.47-.58.92-.97 1.31s-.85.73-1.31.97c0 0-.24.11-.24.39s.24.39.24.39c.47.24.92.58 1.31.97s.73.85.97 1.31c0 0 .11.24.39.24s.39-.24.39-.24c.24-.47.58-.92.97-1.31s.85-.73 1.31-.97c0 0 .24-.11.24-.39s-.24-.39-.24-.39z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <p class="foryou">For you</p>
+            </a>
+            <div class="foryouactive rounded-sm"></div>
           </div>
           <div class="mt-4 flex justify-center items-center flex-dir">
             <div class="circle rounded-full flex justify-center items-center">
@@ -734,12 +763,12 @@
             <p class="foryou">More</p>
           </div>
         </div>
-        <div class="mt-10 relative">
+        <div id="marg" class="mt-10 relative">
           <p class="wanttry">You might want to try...</p>
           <div class="caro">
-            <div
+            <div id="swip"
               class="swiper mySwiper"
-              style="width: 1570px !important; margin-left: 0 !important"
+              style="width: 1570px; margin-left: 0 !important"
             >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -1008,126 +1037,128 @@
           </div>
         </div>
         <!-- new -->
-        <div class="rounded biggest mt-10">
-          <div class="flex justify-between items-center p-6">
-            <div class="flex gap4 items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-selector"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#000000"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <!-- <polyline points="8 9 12 5 16 9" /> -->
-                <polyline points="16 15 12 19 8 15" />
-              </svg>
-              <p>The biggest announcements from Canva Create 2022</p>
-            </div>
-            <div>
-              <button class="watch flex items-center gap2 p-2">
+        <div id="allcontent" >
+          <div id="biggest"  class="rounded biggest mt-10">
+            <div class="flex biganounce flex-wrap justify-between items-center p-6">
+              <div class="flex gap4 items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-player-play"
-                  width="24"
-                  height="24"
+                  class="icon icon-tabler icon-tabler-selector"
+                  width="32"
+                  height="32"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="#000000"
-                  fill="#000000"
+                  fill="none"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M7 4v16l13 -8z" />
+                  <!-- <polyline points="8 9 12 5 16 9" /> -->
+                  <polyline points="16 15 12 19 8 15" />
                 </svg>
-                Watch the recap
-              </button>
+                <p>The biggest announcements from Canva Create 2022</p>
+              </div>
+              <div>
+                <button class="watch flex items-center gap2 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-player-play"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#000000"
+                    fill="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 4v16l13 -8z" />
+                  </svg>
+                  Watch the recap
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="flex justify-start items-center gap2 p-6">
-            <div>
-              <img
-                class="rounded"
-                src="https://static.canva.com/web/images/08ea12d55fc68eb43a5e2a20efa24a2f.png"
-                alt="one"
-              />
-              <p class="docs">Docs</p>
-              <p class="docs1">
-                Bring the power of design to your documents. Launching soon,
-                sign up to the Canva Docs (Beta) today.
-              </p>
-            </div>
-            <div>
-              <img
-                class="rounded"
-                src="https://static.canva.com/web/images/a914578b214e07ff534771d534425142.png"
-                alt="one"
-              />
-              <p class="docs">Websites</p>
-              <p class="docs1">
-                Bring the power of design to your documents. Launching soon,
-                sign up to the Canva Docs (Beta) today.
-              </p>
-            </div>
-            <div>
-              <img
-                class="rounded"
-                src="https://static.canva.com/web/images/45055fb9749702eb8dad813a95826b3d.png"
-                alt="one"
-              />
-              <p class="docs">Whiteboard</p>
-              <p class="docs1">
-                Bring the power of design to your documents. Launching soon,
-                sign up to the Canva Docs (Beta) today.
-              </p>
-            </div>
-            <div>
-              <img
-                class="rounded"
-                src="https://static.canva.com/web/images/a7f11722628fcf0e4966300ed1c5a3a9.png"
-                alt="one"
-              />
-              <p class="docs">Videos</p>
-              <p class="docs1">
-                Bring the power of design to your documents. Launching soon,
-                sign up to the Canva Docs (Beta) today.
-              </p>
-            </div>
-            <div>
-              <img
-                class="rounded"
-                src="https://static.canva.com/web/images/1172671597bcef36d067ecee17f87da3.png"
-                alt="one"
-              />
-              <p class="docs">Paint products</p>
-              <p class="docs1">
-                Bring the power of design to your documents. Launching soon,
-                sign up to the Canva Docs (Beta) today.
-              </p>
-            </div>
-            <div>
-              <img
-                class="rounded"
-                src="https://static.canva.com/web/images/1172671597bcef36d067ecee17f87da3.png"
-                alt="one"
-              />
-              <p class="docs">Presentations</p>
-              <p class="docs1">
-                Bring the power of design to your documents. Launching soon,
-                sign up to the Canva Docs (Beta) today.
-              </p>
+            <div class="flex biganounce  justify-start items-center gap2 p-6">
+              <div>
+                <img
+                  class="rounded"
+                  src="https://static.canva.com/web/images/08ea12d55fc68eb43a5e2a20efa24a2f.png"
+                  alt="one"
+                />
+                <p class="docs">Docs</p>
+                <p class="docs1">
+                  Bring the power of design to your documents. Launching soon,
+                  sign up to the Canva Docs (Beta) today.
+                </p>
+              </div>
+              <div>
+                <img
+                  class="rounded"
+                  src="https://static.canva.com/web/images/a914578b214e07ff534771d534425142.png"
+                  alt="one"
+                />
+                <p class="docs">Websites</p>
+                <p class="docs1">
+                  Bring the power of design to your documents. Launching soon,
+                  sign up to the Canva Docs (Beta) today.
+                </p>
+              </div>
+              <div>
+                <img
+                  class="rounded"
+                  src="https://static.canva.com/web/images/45055fb9749702eb8dad813a95826b3d.png"
+                  alt="one"
+                />
+                <p class="docs">Whiteboard</p>
+                <p class="docs1">
+                  Bring the power of design to your documents. Launching soon,
+                  sign up to the Canva Docs (Beta) today.
+                </p>
+              </div>
+              <div>
+                <img
+                  class="rounded"
+                  src="https://static.canva.com/web/images/a7f11722628fcf0e4966300ed1c5a3a9.png"
+                  alt="one"
+                />
+                <p class="docs">Videos</p>
+                <p class="docs1">
+                  Bring the power of design to your documents. Launching soon,
+                  sign up to the Canva Docs (Beta) today.
+                </p>
+              </div>
+              <div>
+                <img
+                  class="rounded"
+                  src="https://static.canva.com/web/images/1172671597bcef36d067ecee17f87da3.png"
+                  alt="one"
+                />
+                <p class="docs">Paint products</p>
+                <p class="docs1">
+                  Bring the power of design to your documents. Launching soon,
+                  sign up to the Canva Docs (Beta) today.
+                </p>
+              </div>
+              <div>
+                <img
+                  class="rounded"
+                  src="https://static.canva.com/web/images/1172671597bcef36d067ecee17f87da3.png"
+                  alt="one"
+                />
+                <p class="docs">Presentations</p>
+                <p class="docs1">
+                  Bring the power of design to your documents. Launching soon,
+                  sign up to the Canva Docs (Beta) today.
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <!-- end -->
         <!-- new -->
-        <div class="mt-10">
+        <div id="allcontent1" class="mt-10">
           <div class="flex justify-between items-center">
             <p class="recent">Recent designs</p>
             <svg
@@ -1279,6 +1310,26 @@
         opacity: 0 !important;
       }
     </style>
+    <script>
+        function toggle(){
+        document.getElementById("sider").classList.toggle("tog");
+        document.getElementById("r-div").classList.toggle("homefunc");
+        document.getElementById("widthfunc").classList.toggle("widthfunc");
+        document.getElementById("marg").classList.toggle("marg");
+        document.getElementById("allcontent").classList.toggle("padd");
+        document.getElementById("allcontent1").classList.toggle("padd1");
+        document.getElementById("biggest").classList.toggle("biggest1");
+        document.getElementById("swip").classList.toggle("swip1");
+      }
+      // function toggle(){
+      //   var x = document.getElementById("sider")
+      //   if(x.style.display === "block")
+      //   x.style.display="none";
+      //   else{
+      //     x.style.display="block"
+      //   }
+      // }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
@@ -1310,11 +1361,11 @@
             spaceBetween: 24,
           },
           1024: {
-            slidesPerView: "3",
+            slidesPerView: "4",
             spaceBetween: 32,
           },
           1336: {
-            slidesPerView: "7",
+            slidesPerView: "6",
             spaceBetween: 32,
           },
         },

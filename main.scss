@@ -172,6 +172,9 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 .underline {
   text-decoration: underline;
 }
+.underline-none{
+text-decoration: none;
+}
 .relative {
   position: relative;
   z-index: 100;
@@ -621,7 +624,7 @@ $rgba-five: rgba(57, 76, 96, 0.15);
   color: $bg-white;
 }
 .minibar {
-  background: rgba(13, 18, 22, 0.92);
+  background: rgba(13, 18, 22, 0.98);
   width: 100px;
   height: 100vh;
   position: relative;
@@ -660,6 +663,19 @@ $rgba-five: rgba(57, 76, 96, 0.15);
   overflow-x: hidden;
   height: 900px;
 }
+.maxbackground{
+  background: #282c2c;
+  // background: white;
+  position: absolute;
+  left: 0;
+  z-index: 1000;
+height:90px;
+  width: 100px;
+  border-bottom-right-radius: 5px;
+}
+.tog{
+  display: none;
+}
 /* Scroll */
 html {
   scroll-behavior: smooth;
@@ -683,6 +699,7 @@ html {
   font-size: 14px;
 }
 .rounded-div {
+  cursor: pointer;
   width: 15px;
   height: 70px;
   background-color: rgba(13, 18, 22, 0.9);
@@ -692,6 +709,21 @@ html {
   top: 50%;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+}
+.func {
+  cursor: pointer;
+  width: 15px;
+  height: 70px;
+  background-color: rgba(13, 18, 22, 0.9);
+  z-index: 300;
+  position: fixed;
+  left: 100px;
+  top: 50%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.mleft{
+  margin-left: 100px!important;
 }
 .rotate {
   transform: rotate(90deg);
@@ -793,4 +825,77 @@ input[type="range"]::-ms-fill-lower {
 }
 input[type="range"]::-ms-fill-upper {
   background-color: white;
+}
+
+@media (max-width:1400px) {
+  .biganounce{
+    flex-wrap: wrap;
+  }
+}
+.bicon-p{
+  width: 40px;
+  height: 40px;
+  background-color: hsla(0,0%,100%,0.07);
+  position: absolute;
+  right:90px;
+  top:40px;
+  z-index: 200;
+  cursor: pointer;
+  &:hover{
+    background-color: hsla(0,0%,100%,0.05);
+  }
+}
+.bicon-p1{
+  width: 40px;
+  height: 40px;
+  background-color: hsla(0,0%,100%,0.07);
+  position: absolute;
+  right:40px;
+  top:40px;
+  z-index: 200;
+  cursor: pointer;
+  &:hover{
+    background-color: hsla(0,0%,100%,0.05);
+  }
+}
+.blueicon{
+  color: white;
+}
+.homefunc{
+  margin-left: 0px!important;
+ padding-left: 16px;
+ padding-right: 16px;
+}
+.widthfunc{
+  width: 100%;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.marg{
+  margin-top: 100px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.padd{
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.padd1{
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.biggest1{
+  // width: 100%!important;
+  max-width: none!important;
+}
+.swip1{
+  width: 1800px!important;
+}
+.foryouactive{
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background: $bg-white;
+  position: absolute;
+  top: 95px;
 }

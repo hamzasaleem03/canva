@@ -206,7 +206,8 @@
           <div
             class="minibar flex justify-start items-center flex-dir text-center gap4"
           >
-            <div>
+          <div class="maxbackground">
+              <!-- <div class=""></div> -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-selector tempcolor"
@@ -307,24 +308,24 @@
               <p>More</p>
             </div>
           </div>
-          <div class="maxsidebar p-6 relative">
-            <div class="rounded-div">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-selector rotate"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="#fff"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <polyline points="16 15 12 19 8 15" />
-              </svg>
-            </div>
+          <div class="rounded-div" id="r-div" onclick="toggle();" >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-selector rotate"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="#fff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="16 15 12 19 8 15" />
+            </svg>
+          </div>
+          <div class="maxsidebar p-6 relative" id="sider">
             <div class="relative search px-4 mt-4">
               <input
                 class="search p-3 rounded-sm pl10 place"
@@ -510,7 +511,8 @@
         </div>
       </div>
       <!-- end -->
-      <div
+      <div 
+      id="m-left"
         class="relative w-full mt-8 pt-4" 
         style="margin-left: 480px; margin-top: 64px;z-index: 400;"
       >
@@ -737,6 +739,13 @@
         opacity: 0 !important;
       }
     </style>
+     <script>
+      function toggle(){
+        document.getElementById("sider").classList.toggle("tog");
+        document.getElementById("r-div").classList.toggle("func");
+        document.getElementById("m-left").classList.toggle("mleft");
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
