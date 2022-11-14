@@ -143,6 +143,9 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 }
 .hr {
   border: 1px solid #f2f0ff;
+  position: relative;
+  z-index: 1000;
+  top:80px;
 }
 .rounded-full {
   border-radius: 100%;
@@ -817,14 +820,14 @@ input[type="range"]::-moz-range-progress {
   background-color: #434343;
 }
 input[type="range"]::-moz-range-track {
-  background-color: white;
+  background-color: $bg-white;
 }
 /* IE*/
 input[type="range"]::-ms-fill-lower {
   background-color: #434343;;
 }
 input[type="range"]::-ms-fill-upper {
-  background-color: white;
+  background-color: $bg-white;
 }
 
 @media (max-width:1400px) {
@@ -859,7 +862,7 @@ input[type="range"]::-ms-fill-upper {
   }
 }
 .blueicon{
-  color: white;
+  color: $bg-white;
 }
 .homefunc{
   margin-left: 0px!important;

@@ -177,6 +177,9 @@
 
 .hr {
   border: 1px solid #f2f0ff;
+  position: relative;
+  z-index: 1000;
+  top: 80px;
 }
 
 .rounded-full {
