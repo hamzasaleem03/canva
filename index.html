@@ -12,7 +12,7 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="p-6 flex justify-between items-center gap4 w-full nav">
+    <nav class="flex justify-between items-center gap4 w-full nav p-6 bord">
       <div class="flex gap8">
         <div class="flex items-center gap8">
           <div onclick="toggle();">
@@ -180,182 +180,70 @@
         />
       </div>
     </nav>
-    <hr class="w-full hr" />
+    <div class="w-full hr"></div>
     <!-- sidebar -->
     <div class="flex gap4 pr-4 allcontent">
-      <div id="sider" class="mt-4 p-6">
-        <div class="flex flex-dir justify-between items-start sidebar">
-          <div aria-label="one">
-            <div class="sidearea flex gap4">
-              <img
-                class="rounded-full"
-                src="https://profile.canva.com/users/UADvAY6pqcI/avatars/1/50.jpg"
-                alt="img"
-              />
-              <div class="mt-2">
-                <p>Personal</p>
-                <span class="free"
-                  >Free
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-point"
-                    width="8"
-                    height="8"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#000000"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <circle cx="12" cy="12" r="4" />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-user"
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#000000"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <circle cx="12" cy="7" r="4" />
-                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                  </svg>
-                  1
-                </span>
-              </div>
-            </div>
-            <div class="mt-4">
-              <button
-                class="flex trydesing p-3 items-center justify-center gap4"
-              >
-                <svg
-                  class="color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-crown"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="#fbbe28"
-                  fill="#fbbe28"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z" />
-                </svg>
-                Try Canva Pro
-              </button>
-            </div>
-            <div class="mt-4">
-              <button
-                onclick='window.location.href = "/"'
-                class="flex homedesing p-3 items-center justify-start gap4"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-home"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="#000000"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-                  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-                  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-                </svg>
-                Home
-              </button>
-            </div>
-            <div class="mt-2">
-              <button
-                onclick='window.location.href = "./template.html"'
-                class="flex tempdesing p-3 items-center justify-start gap4"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-template"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="#000000"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <rect x="4" y="4" width="16" height="4" rx="1" />
-                  <rect x="4" y="12" width="6" height="8" rx="1" />
-                  <line x1="14" y1="12" x2="20" y2="12" />
-                  <line x1="14" y1="16" x2="20" y2="16" />
-                  <line x1="14" y1="20" x2="20" y2="20" />
-                </svg>
-                Template
-              </button>
-            </div>
-            <div class="mt-2">
-              <button
-                class="flex tempdesing p-3 items-center justify-start gap4"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-folder"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="#000000"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"
+      <div id="sider" class="sidewidth">
+        <div class="sidebar sidewidth">
+          <div
+            class="mt-4 sideheightset"
+            style="
+              overflow-y: auto;
+              height: 540px;
+              padding-left: 12px;
+              padding-top: 16px;
+            "
+          >
+            <div class="flex flex-dir justify-between items-start">
+              <div aria-label="one" style="height: 100%">
+                <div class="sidearea flex gap4">
+                  <img
+                    class="rounded-full"
+                    src="https://profile.canva.com/users/UADvAY6pqcI/avatars/1/50.jpg"
+                    alt="img"
                   />
-                </svg>
-                Projects
-              </button>
-            </div>
-            <div class="mt-8">
-              <p class="tool">Tools</p>
-              <div class="mt-4">
-                <button
-                  class="flex tempdesing p-3 items-center justify-between gap4"
-                >
-                  <div class="flex items-center gap2">
-                    <svg
-                      class="colorblack"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-folder"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.22 3.435 9.532 6.53 5.41 8.03l6.847-5.745a2 2 0 0 1 2.817.246L16.5 4.23a2.99 2.99 0 0 0-1.14.18l-.511.186-.923-1.1a.5.5 0 0 0-.704-.061Zm-1.276 4.878H7.56l8.143-2.964a2 2 0 0 1 2.563 1.195l.644 1.769h-1.597l-.457-1.256a.5.5 0 0 0-.64-.298l-4.27 1.554Zm-6.752 1h14a1.992 1.992 0 0 1 1.492.668c.316.354.508.82.508 1.332v8a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Zm14.822-.886.009.002-.014-.015.005.013ZM4.75 11.3a.5.5 0 0 1 .5-.5H19.2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5H5.25a.5.5 0 0 1-.5-.5v-8Zm6.446 4.326c-.033.905-.768 1.544-1.782 1.544-1.185 0-1.914-.795-1.914-2.086C7.5 13.792 8.227 13 9.414 13c.995 0 1.749.664 1.779 1.56h-.968a.791.791 0 0 0-.811-.721c-.551 0-.889.471-.889 1.242 0 .773.338 1.25.891 1.25.434 0 .757-.28.815-.704h.965ZM13.688 13c1.19 0 1.946.798 1.946 2.084 0 1.288-.756 2.086-1.946 2.086-1.196 0-1.952-.798-1.952-2.086 0-1.286.765-2.084 1.952-2.084Zm0 .834c-.557 0-.927.488-.927 1.25 0 .764.365 1.253.927 1.253.556 0 .924-.489.924-1.253 0-.762-.37-1.25-.924-1.25Zm2.792 3.23a.702.702 0 1 0 0-1.405.702.702 0 0 0 0 1.404Z"
-                      />
-                    </svg>
-                    Brand
+                  <div class="mt-2">
+                    <p>Personal</p>
+                    <span class="free"
+                      >Free
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-point"
+                        width="8"
+                        height="8"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#000000"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="12" r="4" />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-user"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#000000"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="7" r="4" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                      </svg>
+                      1
+                    </span>
                   </div>
-                  <div
-                    class="rounded-full king flex items-center justify-center"
+                </div>
+                <div class="mt-4">
+                  <button
+                    class="flex trydesing p-3 items-center justify-center gap4"
                   >
                     <svg
                       class="color"
@@ -365,26 +253,25 @@
                       height="12"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
-                      stroke="#ffffff"
-                      fill="#ffffff"
+                      stroke="#fbbe28"
+                      fill="#fbbe28"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z" />
                     </svg>
-                  </div>
-                </button>
-              </div>
-              <div class="mt-2">
-                <button
-                  class="flex tempdesing p-3 items-center justify-between gap4"
-                >
-                  <div class="flex items-center gap2">
+                    Try Canva Pro
+                  </button>
+                </div>
+                <div class="mt-4">
+                  <button
+                    onclick='window.location.href = "/"'
+                    class="flex homedesing p-3 items-center justify-start gap4"
+                  >
                     <svg
-                      class="colorblack"
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-calendar-minus"
+                      class="icon icon-tabler icon-tabler-home"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -395,211 +282,400 @@
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <rect x="4" y="5" width="16" height="16" rx="2" />
-                      <line x1="16" y1="3" x2="16" y2="7" />
-                      <line x1="8" y1="3" x2="8" y2="7" />
-                      <line x1="4" y1="11" x2="20" y2="11" />
-                      <line x1="10" y1="16" x2="14" y2="16" />
+                      <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                      <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                      <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
                     </svg>
-                    Content Partner
-                  </div>
-                  <div
-                    class="rounded-full king flex items-center justify-center"
+                    Home
+                  </button>
+                </div>
+                <div class="mt-2">
+                  <button
+                    onclick='window.location.href = "./template.html"'
+                    class="flex tempdesing p-3 items-center justify-start gap4"
                   >
                     <svg
-                      class="color"
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-crown"
-                      width="12"
-                      height="12"
+                      class="icon icon-tabler icon-tabler-template"
+                      width="24"
+                      height="24"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
-                      stroke="#ffffff"
-                      fill="#ffffff"
+                      stroke="#000000"
+                      fill="none"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z" />
+                      <rect x="4" y="4" width="16" height="4" rx="1" />
+                      <rect x="4" y="12" width="6" height="8" rx="1" />
+                      <line x1="14" y1="12" x2="20" y2="12" />
+                      <line x1="14" y1="16" x2="20" y2="16" />
+                      <line x1="14" y1="20" x2="20" y2="20" />
                     </svg>
-                  </div>
-                </button>
-              </div>
-              <div class="mt-2">
-                <button
-                  class="flex tempdesing p-3 items-center justify-between gap4"
-                >
-                  <div class="flex items-center gap2">
+                    Template
+                  </button>
+                </div>
+                <div class="mt-2">
+                  <button
+                    class="flex tempdesing p-3 items-center justify-start gap4"
+                  >
                     <svg
-                      class="colorblack"
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-calendar-minus"
+                      class="icon icon-tabler icon-tabler-folder"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill="currentColor"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M5 4h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zM5 16h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6 0h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6 0h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z"
-                        fill="none"
-                      />
-                    </svg>
-                    Discover apps
-                  </div>
-                  <!-- <div class="rounded-full king flex items-center justify-center">
-                      <svg class="color" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-crown" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                          <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z" />
-                        </svg>
-                    </div> -->
-                </button>
-              </div>
-              <div class="mt-2">
-                <button
-                  class="flex tempdesing p-3 items-center justify-between gap4"
-                >
-                  <div class="flex items-center gap2">
-                    <svg
-                      class="colorblack"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-calendar-minus"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#000000"
                       fill="none"
-                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
                     >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path
-                        d="m18.378 13.579 2.009.828c.817.383.817 1.393 0 1.776l-6.907 3.238c-.817.383-2.143.383-2.96 0l-6.907-3.238c-.817-.383-.817-1.393 0-1.776l2.009-.828"
-                      />
-                      <path
-                        d="m18.42 10.108 1.967.812c.817.383.817 1.393 0 1.776l-6.907 3.238c-.817.383-2.143.383-2.96 0l-6.907-3.238c-.817-.383-.817-1.393 0-1.776l1.967-.812"
-                      />
-                      <path
-                        clip-rule-="evenodd"
-                        d="m3.613 7.432 6.907-2.849c.817-.383 2.143-.383 2.96 0l6.907 2.85c.817.382.817 1.392 0 1.775l-6.907 3.238c-.817.383-2.143.383-2.96 0L3.613 9.208c-.817-.383-.817-1.393 0-1.776Z"
+                        d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"
                       />
                     </svg>
-                    Smartmockups
-                  </div>
-                  <!-- <div class="rounded-full king flex items-center justify-center">
-                      <svg class="color" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-crown" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    Projects
+                  </button>
+                </div>
+                <div class="mt-8">
+                  <p class="tool">Tools</p>
+                  <div class="mt-4">
+                    <button
+                      class="flex tempdesing p-3 items-center justify-between gap4"
+                    >
+                      <div class="flex items-center gap2">
+                        <svg
+                          class="colorblack"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-folder"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M13.22 3.435 9.532 6.53 5.41 8.03l6.847-5.745a2 2 0 0 1 2.817.246L16.5 4.23a2.99 2.99 0 0 0-1.14.18l-.511.186-.923-1.1a.5.5 0 0 0-.704-.061Zm-1.276 4.878H7.56l8.143-2.964a2 2 0 0 1 2.563 1.195l.644 1.769h-1.597l-.457-1.256a.5.5 0 0 0-.64-.298l-4.27 1.554Zm-6.752 1h14a1.992 1.992 0 0 1 1.492.668c.316.354.508.82.508 1.332v8a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Zm14.822-.886.009.002-.014-.015.005.013ZM4.75 11.3a.5.5 0 0 1 .5-.5H19.2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5H5.25a.5.5 0 0 1-.5-.5v-8Zm6.446 4.326c-.033.905-.768 1.544-1.782 1.544-1.185 0-1.914-.795-1.914-2.086C7.5 13.792 8.227 13 9.414 13c.995 0 1.749.664 1.779 1.56h-.968a.791.791 0 0 0-.811-.721c-.551 0-.889.471-.889 1.242 0 .773.338 1.25.891 1.25.434 0 .757-.28.815-.704h.965ZM13.688 13c1.19 0 1.946.798 1.946 2.084 0 1.288-.756 2.086-1.946 2.086-1.196 0-1.952-.798-1.952-2.086 0-1.286.765-2.084 1.952-2.084Zm0 .834c-.557 0-.927.488-.927 1.25 0 .764.365 1.253.927 1.253.556 0 .924-.489.924-1.253 0-.762-.37-1.25-.924-1.25Zm2.792 3.23a.702.702 0 1 0 0-1.405.702.702 0 0 0 0 1.404Z"
+                          />
+                        </svg>
+                        Brand
+                      </div>
+                      <div
+                        class="rounded-full king flex items-center justify-center"
+                      >
+                        <svg
+                          class="color"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-crown"
+                          width="12"
+                          height="12"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#ffffff"
+                          fill="#ffffff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                           <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z" />
                         </svg>
-                    </div> -->
-                </button>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="mt-2">
+                    <button
+                      class="flex tempdesing p-3 items-center justify-between gap4"
+                    >
+                      <div class="flex items-center gap2">
+                        <svg
+                          class="colorblack"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-calendar-minus"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#000000"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <rect x="4" y="5" width="16" height="16" rx="2" />
+                          <line x1="16" y1="3" x2="16" y2="7" />
+                          <line x1="8" y1="3" x2="8" y2="7" />
+                          <line x1="4" y1="11" x2="20" y2="11" />
+                          <line x1="10" y1="16" x2="14" y2="16" />
+                        </svg>
+                        Content Partner
+                      </div>
+                      <div
+                        class="rounded-full king flex items-center justify-center"
+                      >
+                        <svg
+                          class="color"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-crown"
+                          width="12"
+                          height="12"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#ffffff"
+                          fill="#ffffff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z" />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="mt-2">
+                    <button
+                      class="flex tempdesing p-3 items-center justify-between gap4"
+                    >
+                      <div class="flex items-center gap2">
+                        <svg
+                          class="colorblack"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-calendar-minus"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5 4h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6-6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 6h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zM5 16h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6 0h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1zm6 0h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z"
+                            fill="none"
+                          />
+                        </svg>
+                        Discover apps
+                      </div>
+                      <!-- <div class="rounded-full king flex items-center justify-center">
+                          <svg class="color" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-crown" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z" />
+                            </svg>
+                        </div> -->
+                    </button>
+                  </div>
+                  <div class="mt-2">
+                    <button
+                      class="flex tempdesing p-3 items-center justify-between gap4"
+                    >
+                      <div class="flex items-center gap2">
+                        <svg
+                          class="colorblack"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-calendar-minus"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                        >
+                          <path
+                            d="m18.378 13.579 2.009.828c.817.383.817 1.393 0 1.776l-6.907 3.238c-.817.383-2.143.383-2.96 0l-6.907-3.238c-.817-.383-.817-1.393 0-1.776l2.009-.828"
+                          />
+                          <path
+                            d="m18.42 10.108 1.967.812c.817.383.817 1.393 0 1.776l-6.907 3.238c-.817.383-2.143.383-2.96 0l-6.907-3.238c-.817-.383-.817-1.393 0-1.776l1.967-.812"
+                          />
+                          <path
+                            clip-rule-="evenodd"
+                            d="m3.613 7.432 6.907-2.849c.817-.383 2.143-.383 2.96 0l6.907 2.85c.817.382.817 1.392 0 1.775l-6.907 3.238c-.817.383-2.143.383-2.96 0L3.613 9.208c-.817-.383-.817-1.393 0-1.776Z"
+                          />
+                        </svg>
+                        Smartmockups
+                      </div>
+                      <!-- <div class="rounded-full king flex items-center justify-center">
+                          <svg class="color" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-crown" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z" />
+                            </svg>
+                        </div> -->
+                    </button>
+                  </div>
+                </div>
+                <div class="setheight"></div>
+                <div class="flex flex-dir justify-end items-end hissue">
+                  <div class="mt-2">
+                    <button
+                      class="flex tempdesing p-3 items-center justify-start gap4"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-building-skyscraper"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#000000"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="3" y1="21" x2="21" y2="21" />
+                        <path d="M5 21v-14l8 -4v18" />
+                        <path d="M19 21v-10l-6 -4" />
+                        <line x1="9" y1="9" x2="9" y2="9.01" />
+                        <line x1="9" y1="12" x2="9" y2="12.01" />
+                        <line x1="9" y1="15" x2="9" y2="15.01" />
+                        <line x1="9" y1="18" x2="9" y2="18.01" />
+                      </svg>
+                      Create a team
+                    </button>
+                  </div>
+                  <div class="mt-2">
+                    <button
+                      class="flex tempdesing p-3 items-center justify-start gap4"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-trash"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#000000"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="4" y1="7" x2="20" y2="7" />
+                        <line x1="10" y1="11" x2="10" y2="17" />
+                        <line x1="14" y1="11" x2="14" y2="17" />
+                        <path
+                          d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"
+                        />
+                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                      </svg>
+                      Trash
+                    </button>
+                  </div>
+                </div>
               </div>
+              <!-- two -->
             </div>
           </div>
-          <!-- two -->
+          <!-- <div
+            aria-label="two"
+            class="flex justify-end items-end flex-dir"
+          >
+            <div class="mt-2">
+              <button class="flex tempdesing p-3 items-center justify-start gap4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-building-skyscraper"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#000000"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="3" y1="21" x2="21" y2="21" />
+                  <path d="M5 21v-14l8 -4v18" />
+                  <path d="M19 21v-10l-6 -4" />
+                  <line x1="9" y1="9" x2="9" y2="9.01" />
+                  <line x1="9" y1="12" x2="9" y2="12.01" />
+                  <line x1="9" y1="15" x2="9" y2="15.01" />
+                  <line x1="9" y1="18" x2="9" y2="18.01" />
+                </svg>
+                Create a team
+              </button>
+            </div>
+            <div class="mt-2">
+              <button class="flex tempdesing p-3 items-center justify-start gap4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-trash"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#000000"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="4" y1="7" x2="20" y2="7" />
+                  <line x1="10" y1="11" x2="10" y2="17" />
+                  <line x1="14" y1="11" x2="14" y2="17" />
+                  <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                  <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                </svg>
+                Trash
+              </button>
+            </div>
+          </div> -->
         </div>
-        <div
-          aria-label="two"
-          class="flex justify-end items-end flex-dir sidebar"
-          style="margin-top: 730px"
-        >
-          <div class="mt-2">
-            <button class="flex tempdesing p-3 items-center justify-start gap4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-building-skyscraper"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#000000"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <line x1="3" y1="21" x2="21" y2="21" />
-                <path d="M5 21v-14l8 -4v18" />
-                <path d="M19 21v-10l-6 -4" />
-                <line x1="9" y1="9" x2="9" y2="9.01" />
-                <line x1="9" y1="12" x2="9" y2="12.01" />
-                <line x1="9" y1="15" x2="9" y2="15.01" />
-                <line x1="9" y1="18" x2="9" y2="18.01" />
-              </svg>
-              Create a team
-            </button>
-          </div>
-          <div class="mt-2">
-            <button class="flex tempdesing p-3 items-center justify-start gap4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-trash"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#000000"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <line x1="4" y1="7" x2="20" y2="7" />
-                <line x1="10" y1="11" x2="10" y2="17" />
-                <line x1="14" y1="11" x2="14" y2="17" />
-                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
-                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
-              </svg>
-              Trash
-            </button>
-          </div>
-        </div>
+        <!-- end -->
       </div>
       <!-- end -->
       <!-- center -->
       <div
         id="r-div"
         class="relative w-full mt-8 py-4"
-        style="margin-left: 220px"
         id="center"
+        style="padding-right: 16px"
       >
-        <div class="absolute" id="widthfunc">
+        <div
+          class="absolute"
+          style="height: 100%; width: 100%; padding-right: 16px"
+          id="widthfunc"
+        >
           <img
+            style="height: 285px"
             class="rounded w-full"
             src="https://tuk-cdn.s3.amazonaws.com/can-uploader/mainimage2323.png"
             alt="main"
           />
-        </div>
-        <div class="rounded-sm flex justify-center items-center bicon-p">
-          <svg
-            class="blueicon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-search"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="none"
-              d="M7.75 5V3a.75.75 0 0 0-1.5 0v2h1.5zm0 4v6.75c0 .14.11.25.25.25h7.01v1.5H8c-.97 0-1.75-.78-1.75-1.75V9h1.5zm11.26 7h1.97a.75.75 0 0 1 0 1.5H19V16zm-1.25 4.78a.75.75 0 1 1-1.5 0V8a.25.25 0 0 0-.25-.25H3a.75.75 0 0 1 0-1.5h13.01c.97 0 1.75.78 1.75 1.75v12.78z"
-              fill="currentColor"
-            />
-          </svg>
-        </div>
-        <div class="rounded-sm flex justify-center items-center bicon-p1">
-          <svg
-            class="blueicon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-search"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="none"
-              d="M12.75 13.81v7.44a.75.75 0 1 1-1.5 0v-7.4L9.49 15.6a.75.75 0 1 1-1.06-1.06l2.35-2.36c.68-.68 1.8-.68 2.48 0l2.35 2.36a.75.75 0 1 1-1.06 1.06l-1.8-1.8zM9 18v1.5H6.75v-.01A5.63 5.63 0 0 1 5.01 8.66a6 6 0 0 1 11.94-.4 5.63 5.63 0 0 1 .3 11.23v.01H15V18h1.88a4.12 4.12 0 1 0-1.5-7.97A4.51 4.51 0 0 0 11 4.5a4.5 4.5 0 0 0-4.43 5.29 4.13 4.13 0 0 0 .68 8.2V18H9z"
-              fill="currentColor"
-            />
-          </svg>
+          <div class="rounded-sm flex justify-center items-center bicon-p">
+            <svg
+              class="blueicon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-search"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M7.75 5V3a.75.75 0 0 0-1.5 0v2h1.5zm0 4v6.75c0 .14.11.25.25.25h7.01v1.5H8c-.97 0-1.75-.78-1.75-1.75V9h1.5zm11.26 7h1.97a.75.75 0 0 1 0 1.5H19V16zm-1.25 4.78a.75.75 0 1 1-1.5 0V8a.25.25 0 0 0-.25-.25H3a.75.75 0 0 1 0-1.5h13.01c.97 0 1.75.78 1.75 1.75v12.78z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div class="rounded-sm flex justify-center items-center bicon-p1">
+            <svg
+              class="blueicon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-search"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M12.75 13.81v7.44a.75.75 0 1 1-1.5 0v-7.4L9.49 15.6a.75.75 0 1 1-1.06-1.06l2.35-2.36c.68-.68 1.8-.68 2.48 0l2.35 2.36a.75.75 0 1 1-1.06 1.06l-1.8-1.8zM9 18v1.5H6.75v-.01A5.63 5.63 0 0 1 5.01 8.66a6 6 0 0 1 11.94-.4 5.63 5.63 0 0 1 .3 11.23v.01H15V18h1.88a4.12 4.12 0 1 0-1.5-7.97A4.51 4.51 0 0 0 11 4.5a4.5 4.5 0 0 0-4.43 5.29 4.13 4.13 0 0 0 .68 8.2V18H9z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
         </div>
         <div class="flex justify-center items-center flex-dir mt-4">
           <div class="relative thanks">
@@ -608,7 +684,7 @@
               <span class="million underline">100 million!</span>
             </p>
           </div>
-          <div class="relative search px-4 mt-4">
+          <div class="relative search mt-4">
             <input
               class="search p-3 rounded-sm pl10"
               type="text"
@@ -618,7 +694,6 @@
             />
             <div class="absolute topsearch leftsearch">
               <svg
-                aria-colspan="absolute px-4"
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-search"
                 width="24"
@@ -778,13 +853,13 @@
             <p class="foryou">More</p>
           </div>
         </div>
-        <div id="marg" class="mt-10 relative">
+        <div id="marg" style="margin-top: 80px" class="relative">
           <p class="wanttry">You might want to try...</p>
           <div class="caro">
             <div
               id="swip"
               class="swiper mySwiper"
-              style="width: 1570px; margin-left: 0 !important"
+              style="margin-left: 0 !important"
             >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -1053,7 +1128,7 @@
           </div>
         </div>
         <!-- new -->
-        <div id="allcontent">
+        <div id="allcontent" class="relative">
           <div id="biggest" class="rounded biggest mt-10">
             <div
               class="flex biganounce flex-wrap justify-between items-center p-6"
@@ -1078,7 +1153,7 @@
                 <p>The biggest announcements from Canva Create 2022</p>
               </div>
               <div>
-                <button class="watch flex items-center gap2 p-2">
+                <button class="watch flex items-center gap4 p-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-player-play"
@@ -1098,7 +1173,7 @@
                 </button>
               </div>
             </div>
-            <div class="flex biganounce justify-start items-center gap2 p-6">
+            <div class="flex biganounce justify-start items-center gap4 p-6">
               <div>
                 <img
                   class="rounded"
@@ -1107,8 +1182,8 @@
                 />
                 <p class="docs">Docs</p>
                 <p class="docs1">
-                  Bring the power of design to your documents. Launching soon,
-                  sign up to the Canva Docs (Beta) today.
+                  Bring the power of design to your documents. <br />
+                  Launching soon.
                 </p>
               </div>
               <div>
@@ -1119,8 +1194,8 @@
                 />
                 <p class="docs">Websites</p>
                 <p class="docs1">
-                  Bring the power of design to your documents. Launching soon,
-                  sign up to the Canva Docs (Beta) today.
+                  Bring the power of design to your documents. <br />
+                  Launching soon.
                 </p>
               </div>
               <div>
@@ -1131,8 +1206,8 @@
                 />
                 <p class="docs">Whiteboard</p>
                 <p class="docs1">
-                  Bring the power of design to your documents. Launching soon,
-                  sign up to the Canva Docs (Beta) today.
+                  Bring the power of design to your documents. <br />
+                  Launching soon.
                 </p>
               </div>
               <div>
@@ -1143,8 +1218,8 @@
                 />
                 <p class="docs">Videos</p>
                 <p class="docs1">
-                  Bring the power of design to your documents. Launching soon,
-                  sign up to the Canva Docs (Beta) today.
+                  Bring the power of design to your documents. <br />
+                  Launching soon.
                 </p>
               </div>
               <div>
@@ -1155,8 +1230,8 @@
                 />
                 <p class="docs">Paint products</p>
                 <p class="docs1">
-                  Bring the power of design to your documents. Launching soon,
-                  sign up to the Canva Docs (Beta) today.
+                  Bring the power of design to your documents. <br />
+                  Launching soon.
                 </p>
               </div>
               <div>
@@ -1167,8 +1242,8 @@
                 />
                 <p class="docs">Presentations</p>
                 <p class="docs1">
-                  Bring the power of design to your documents. Launching soon,
-                  sign up to the Canva Docs (Beta) today.
+                  Bring the power of design to your documents. <br />
+                  Launching soon.
                 </p>
               </div>
             </div>
@@ -1176,7 +1251,7 @@
         </div>
         <!-- end -->
         <!-- new -->
-        <div id="allcontent1" class="mt-10">
+        <div id="allcontent1" class="mt-10 relative">
           <div class="flex justify-between items-center">
             <p class="recent">Recent designs</p>
             <svg
@@ -1313,6 +1388,28 @@
         </div>
       </div>
     </div>
+    <div class="qmark">
+      <div class="flex justify-center items-center qm">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-question-mark"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4"
+          />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+        </svg>
+      </div>
+    </div>
     <style>
       :root {
         --swiper-theme-color: black !important;
@@ -1379,10 +1476,14 @@
             spaceBetween: 24,
           },
           1024: {
-            slidesPerView: "4",
-            spaceBetween: 32,
+            slidesPerView: "3",
+            spaceBetween: 8,
           },
           1336: {
+            slidesPerView: "4",
+            spaceBetween: 8,
+          },
+          1900: {
             slidesPerView: "6",
             spaceBetween: 32,
           },

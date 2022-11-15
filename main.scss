@@ -37,7 +37,9 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 }
 .sidebar {
   position: fixed;
+  // overflow-y: auto;
 }
+// Defined CSS Properties for Flexibility
 .flex {
   display: flex;
 }
@@ -101,6 +103,10 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 .p-4 {
   padding: 16px;
 }
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
 .pt-4 {
   padding-top: 16px;
 }
@@ -143,9 +149,9 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 }
 .hr {
   border: 1px solid #f2f0ff;
-  position: relative;
-  z-index: 1000;
-  top: 80px;
+}
+.bord {
+  border-bottom: 1px solid #f2f0ff;
 }
 .rounded-full {
   border-radius: 100%;
@@ -182,6 +188,8 @@ $rgba-five: rgba(57, 76, 96, 0.15);
   position: relative;
   z-index: 100;
 }
+//  END
+
 .icon-tabler-selector {
   margin-top: -8px;
 }
@@ -200,7 +208,7 @@ $rgba-five: rgba(57, 76, 96, 0.15);
   outline: none;
   cursor: pointer;
   border-radius: 5px;
-  width: 136px;
+  width: 185px;
   &:hover {
     background-color: #9e77f3;
   }
@@ -250,7 +258,6 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 .tempdesing {
   text-align: center;
   color: $text-black;
-  // background-color: rgba(57,76,96,0.15);
   border: none;
   outline: none;
   cursor: pointer;
@@ -364,12 +371,9 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 .width {
   width: 150px;
 }
-// for swiper
+// Swiper
 .swiper {
-  width: 1536px !important;
-  height: 100%;
-}
-.swiper {
+  width: 100%;
   margin-left: 0 !important;
   margin-right: 0 !important;
   position: relative;
@@ -419,7 +423,7 @@ $rgba-five: rgba(57, 76, 96, 0.15);
   height: 40px;
 }
 .biggest {
-  max-width: 1595px;
+  // max-width: 1595px;
   width: 100%;
   background-color: #f2f0ff;
   color: $text-black;
@@ -465,7 +469,6 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 .businessdesign {
   text-align: center;
   color: $text-black;
-  // background-color: rgba(57,76,96,0.15);
   border: none;
   outline: none;
   cursor: pointer;
@@ -481,7 +484,6 @@ $rgba-five: rgba(57, 76, 96, 0.15);
   background-color: rgb(123 151 181 / 15%);
   text-align: center;
   color: $text-black;
-  // background-color: rgba(57,76,96,0.15);
   border: none;
   outline: none;
   cursor: pointer;
@@ -509,7 +511,7 @@ $rgba-five: rgba(57, 76, 96, 0.15);
     rgba(0, 0, 0, 0.01),
     rgba(0, 0, 0, 0.1)
   );
-  max-width: 1567px;
+  // max-width: 1567px;
   width: 100%;
 }
 .trend {
@@ -660,8 +662,8 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 }
 .maxsidebar {
   background-color: rgba(13, 18, 22, 0.9);
-  max-width: 380px;
-  width: 100%;
+  width: 380px;
+  // width: 100%;
   overflow: auto;
   overflow-x: hidden;
   height: 900px;
@@ -706,7 +708,7 @@ html {
   width: 15px;
   height: 70px;
   background-color: rgba(13, 18, 22, 0.9);
-  z-index: 300;
+  z-index: 500;
   position: fixed;
   left: 480px;
   top: 50%;
@@ -718,7 +720,7 @@ html {
   width: 15px;
   height: 70px;
   background-color: rgba(13, 18, 22, 0.9);
-  z-index: 300;
+  z-index: 500;
   position: fixed;
   left: 100px;
   top: 50%;
@@ -735,7 +737,7 @@ html {
 }
 .gray {
   background: #e5e7eb;
-  // height: 100vh;
+  // height: 790px;
 }
 .animate {
   background: $bg-white;
@@ -789,30 +791,6 @@ html {
   border: 1px solid #434343;
 }
 // inout type range
-/*Chrome*/
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  input[type="range"] {
-    overflow: hidden;
-    width: 216px;
-    height: 2px;
-    -webkit-appearance: none;
-    background-color: rgb(247, 240, 240);
-  }
-  input[type="range"]::-webkit-slider-runnable-track {
-    height: 10px;
-    -webkit-appearance: none;
-    color: #434343;
-    margin-top: -1px;
-  }
-  input[type="range"]::-webkit-slider-thumb {
-    width: 20px;
-    -webkit-appearance: none;
-    height: 20x;
-    cursor: ew-resize;
-    background: #434343;
-    box-shadow: -80px 0 0 80px #434343;
-  }
-}
 /** FF*/
 input[type="range"]::-moz-range-progress {
   background-color: #434343;
@@ -826,11 +804,6 @@ input[type="range"]::-ms-fill-lower {
 }
 input[type="range"]::-ms-fill-upper {
   background-color: $bg-white;
-}
-@media (max-width: 1400px) {
-  .biganounce {
-    flex-wrap: wrap;
-  }
 }
 .bicon-p {
   width: 40px;
@@ -885,11 +858,7 @@ input[type="range"]::-ms-fill-upper {
   padding-right: 28px;
 }
 .biggest1 {
-  // width: 100%!important;
   max-width: none !important;
-}
-.swip1 {
-  width: 1800px !important;
 }
 .foryouactive {
   width: 20px;
@@ -897,7 +866,7 @@ input[type="range"]::-ms-fill-upper {
   transform: rotate(45deg);
   background: $bg-white;
   position: absolute;
-  top: 95px;
+  top: 130px;
 }
 .for2 {
   width: 20px;
@@ -906,4 +875,99 @@ input[type="range"]::-ms-fill-upper {
   background: $bg-white;
   position: absolute;
   top: 130px;
+}
+.setheight {
+  height: 170px;
+  flex-grow: 1;
+  display: flex;
+}
+.sidewidth {
+  min-width: 260px;
+}
+.qm {
+  width: 48px;
+  height: 48px;
+}
+.qmark {
+  background: $bg-purple;
+  border-radius: 100%;
+  position: fixed;
+  z-index: 1000;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.afor {
+  padding-bottom: 80px;
+}
+// Media Query Section
+@media (height: 1080px) {
+  .hissue {
+    height: 200px;
+  }
+  .sideheightset {
+    height: 100vh !important;
+  }
+  .maxsidebar {
+    height: 100vh;
+  }
+  .gray {
+    height: 84%;
+  }
+}
+@media (max-height: 950px) {
+  .hissue {
+    height: 50px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1899px) {
+  .setheight {
+    height: 25vh;
+  }
+}
+@media (max-width: 1400px) {
+  .caro {
+    max-width: 1000px;
+    width: 100%;
+  }
+  .gaps {
+    gap: 12px;
+  }
+}
+@media (max-width: 1650px) {
+  .biganounce {
+    flex-wrap: wrap;
+  }
+}
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="range"] {
+    overflow: hidden;
+    width: 216px;
+    height: 2px;
+    -webkit-appearance: none;
+    background-color: rgb(247, 240, 240);
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #434343;
+    margin-top: -1px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    -webkit-appearance: none;
+    height: 20x;
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -80px 0 0 80px #434343;
+  }
+}
+// for swiper
+@media (min-width: 1900px) {
+  .swiper {
+    max-width: 1536px !important;
+    width: 100%;
+    height: 100%;
+  }
 }
