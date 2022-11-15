@@ -134,7 +134,37 @@
         </div>
       </div>
       <div class="flex gap4 items-center">
+        <div id="search11" class="relative search1 w-full">
+          <input
+            style="outline: none; border: 1px solid #dbdbed"
+            class="search1 p-3 rounded-sm pl10"
+            type="text"
+            name=""
+            id=""
+            placeholder="Search thousands of templates"
+          />
+          <div class="absolute topsearch leftsearch">
+            <svg
+              class="flex-shrink"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-search"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#000000"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="10" cy="10" r="7" />
+              <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+          </div>
+        </div>
         <svg
+          class="flex-shrink"
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-device-desktop"
           width="24"
@@ -153,6 +183,7 @@
           <line x1="15" y1="16" x2="15" y2="20" />
         </svg>
         <svg
+          class="flex-shrink"
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-settings"
           width="24"
@@ -170,9 +201,11 @@
           />
           <circle cx="12" cy="12" r="3" />
         </svg>
-        <button class="flex gap-2 items-cemter justify-center cdesign p-4">
-          Create a design
-        </button>
+        <div class="w-full">
+          <button class="flex gap-2 items-cemter justify-center cdesign2 p-4">
+            Create a design
+          </button>
+        </div>
         <img
           class="rounded-full"
           src="https://profile.canva.com/users/UADvAY6pqcI/avatars/1/50.jpg"
@@ -864,7 +897,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div
-                    class="flex justify-between gap4 items-center relative"
+                    class="flex justify-between gap4 items-center relative "
                     style="cursor: pointer"
                     onclick="show1();"
                     ondblclick="hide1();"
@@ -1425,6 +1458,18 @@
         opacity: 0 !important;
       }
     </style>
+      <script>
+        function show1() {
+          console.log("hi");
+          document.getElementById("unlimited").style.display = "block";
+          document.getElementById("hidesection").style.display = "block";
+        }
+        function hide1() {
+          console.log("bye");
+          document.getElementById("unlimited").style.display = "none";
+          document.getElementById("hidesection").style.display = "none";
+        }
+      </script>
     <script>
       function toggle() {
         document.getElementById("sider").classList.toggle("tog");
@@ -1437,15 +1482,26 @@
         document.getElementById("swip").classList.toggle("swip1");
         document.getElementById("for1").classList.toggle("for2");
       }
-      // function toggle(){
-      //   var x = document.getElementById("sider")
-      //   if(x.style.display === "block")
-      //   x.style.display="none";
-      //   else{
-      //     x.style.display="block"
-      //   }
-      // }
+      let scrollPos = 0;
+      var nav = document.getElementById("search11");
+
+      function checkPosition() {
+        let windowY = window.scrollY;
+        if (windowY < scrollPos) {
+          // Scrolling UP
+          nav.classList.add("search1");
+          nav.classList.remove("search1show");
+        } else {
+          // Scrolling DOWN
+          nav.classList.remove("search1");
+          nav.classList.add("search1show");
+        }
+        scrollPos = windowY;
+      }
+
+      window.addEventListener("scroll", checkPosition);
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -1490,17 +1546,6 @@
         },
       });
     </script>
-    <script>
-      function show1() {
-        console.log("hi");
-        document.getElementById("unlimited").style.display = "block";
-        document.getElementById("hidesection").style.display = "block";
-      }
-      function hide1() {
-        console.log("bye");
-        document.getElementById("unlimited").style.display = "none";
-        document.getElementById("hidesection").style.display = "none";
-      }
-    </script>
+  
   </body>
 </html>

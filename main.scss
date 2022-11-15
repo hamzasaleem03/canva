@@ -49,6 +49,10 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 .flex-dir {
   flex-direction: column;
 }
+.flex-shrink{
+  display: flex;
+  flex-shrink: 0;
+}
 .justify-center {
   justify-content: center;
 }
@@ -213,6 +217,19 @@ $rgba-five: rgba(57, 76, 96, 0.15);
     background-color: #9e77f3;
   }
 }
+.cdesign2 {
+  text-align: center;
+  color: $bg-white;
+  background-color: $bg-purple;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 136px;
+  &:hover {
+    background-color: #9e77f3;
+  }
+}
 .flyerdesign {
   text-align: center;
   color: $bg-white;
@@ -304,6 +321,14 @@ $rgba-five: rgba(57, 76, 96, 0.15);
   max-width: 600px;
   width: 100%;
   outline: none;
+}
+.search1 {
+  width: 600px;
+  outline: none;
+  display: block;
+}
+.search1show{
+display: none;
 }
 .circle {
   width: 48px;
@@ -625,6 +650,11 @@ $rgba-five: rgba(57, 76, 96, 0.15);
   color: $text-black;
   opacity: 1; /* Firefox */
 }
+.search1::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $text-black;
+  opacity: 1; /* Firefox */
+}
 .colorwhite {
   color: $bg-white;
 }
@@ -937,6 +967,12 @@ input[type="range"]::-ms-fill-upper {
 @media (max-width: 1650px) {
   .biganounce {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 1500px) {
+  .search1 {
+    max-width: 400px;
+    width: 100%;
   }
 }
 /*Chrome*/

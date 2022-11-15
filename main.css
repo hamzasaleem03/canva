@@ -50,6 +50,11 @@
   flex-direction: column;
 }
 
+.flex-shrink {
+  display: flex;
+  flex-shrink: 0;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -260,6 +265,20 @@
   background-color: #9e77f3;
 }
 
+.cdesign2 {
+  text-align: center;
+  color: white;
+  background-color: #8b3dff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 136px;
+}
+.cdesign2:hover {
+  background-color: #9e77f3;
+}
+
 .flyerdesign {
   text-align: center;
   color: white;
@@ -362,6 +381,16 @@
   max-width: 600px;
   width: 100%;
   outline: none;
+}
+
+.search1 {
+  width: 600px;
+  outline: none;
+  display: block;
+}
+
+.search1show {
+  display: none;
 }
 
 .circle {
@@ -753,6 +782,24 @@
   opacity: 1; /* Firefox */
 }
 
+.search1::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0d1216;
+  opacity: 1; /* Firefox */
+}
+
+.search1:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0d1216;
+  opacity: 1; /* Firefox */
+}
+
+.search1::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0d1216;
+  opacity: 1; /* Firefox */
+}
+
 .colorwhite {
   color: white;
 }
@@ -1106,6 +1153,12 @@ input[type=range]::-ms-fill-upper {
 @media (max-width: 1650px) {
   .biganounce {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 1500px) {
+  .search1 {
+    max-width: 400px;
+    width: 100%;
   }
 }
 /*Chrome*/
