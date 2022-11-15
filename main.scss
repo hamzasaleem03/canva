@@ -145,7 +145,7 @@ $rgba-five: rgba(57, 76, 96, 0.15);
   border: 1px solid #f2f0ff;
   position: relative;
   z-index: 1000;
-  top:80px;
+  top: 80px;
 }
 .rounded-full {
   border-radius: 100%;
@@ -175,8 +175,8 @@ $rgba-five: rgba(57, 76, 96, 0.15);
 .underline {
   text-decoration: underline;
 }
-.underline-none{
-text-decoration: none;
+.underline-none {
+  text-decoration: none;
 }
 .relative {
   position: relative;
@@ -666,17 +666,17 @@ text-decoration: none;
   overflow-x: hidden;
   height: 900px;
 }
-.maxbackground{
+.maxbackground {
   background: #282c2c;
   // background: white;
   position: absolute;
   left: 0;
   z-index: 1000;
-height:90px;
+  height: 90px;
   width: 100px;
   border-bottom-right-radius: 5px;
 }
-.tog{
+.tog {
   display: none;
 }
 /* Scroll */
@@ -725,8 +725,8 @@ html {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
-.mleft{
-  margin-left: 100px!important;
+.mleft {
+  margin-left: 100px !important;
 }
 .rotate {
   transform: rotate(90deg);
@@ -783,10 +783,10 @@ html {
     background: rgba(64, 87, 109, 0.09);
   }
 }
-.smallborder{
+.smallborder {
   height: 20px;
   width: 0.5px;
-  border: 1px solid #434343 ;
+  border: 1px solid #434343;
 }
 // inout type range
 /*Chrome*/
@@ -798,21 +798,19 @@ html {
     -webkit-appearance: none;
     background-color: rgb(247, 240, 240);
   }
-
   input[type="range"]::-webkit-slider-runnable-track {
     height: 10px;
     -webkit-appearance: none;
     color: #434343;
     margin-top: -1px;
   }
-
   input[type="range"]::-webkit-slider-thumb {
     width: 20px;
     -webkit-appearance: none;
     height: 20x;
     cursor: ew-resize;
     background: #434343;
-    box-shadow: -80px 0 0 80px #434343;;
+    box-shadow: -80px 0 0 80px #434343;
   }
 }
 /** FF*/
@@ -824,77 +822,76 @@ input[type="range"]::-moz-range-track {
 }
 /* IE*/
 input[type="range"]::-ms-fill-lower {
-  background-color: #434343;;
+  background-color: #434343;
 }
 input[type="range"]::-ms-fill-upper {
   background-color: $bg-white;
 }
-
-@media (max-width:1400px) {
-  .biganounce{
+@media (max-width: 1400px) {
+  .biganounce {
     flex-wrap: wrap;
   }
 }
-.bicon-p{
+.bicon-p {
   width: 40px;
   height: 40px;
-  background-color: hsla(0,0%,100%,0.07);
+  background-color: hsla(0, 0%, 100%, 0.07);
   position: absolute;
-  right:90px;
-  top:40px;
+  right: 90px;
+  top: 40px;
   z-index: 200;
   cursor: pointer;
-  &:hover{
-    background-color: hsla(0,0%,100%,0.05);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
-.bicon-p1{
+.bicon-p1 {
   width: 40px;
   height: 40px;
-  background-color: hsla(0,0%,100%,0.07);
+  background-color: hsla(0, 0%, 100%, 0.07);
   position: absolute;
-  right:40px;
-  top:40px;
+  right: 40px;
+  top: 40px;
   z-index: 200;
   cursor: pointer;
-  &:hover{
-    background-color: hsla(0,0%,100%,0.05);
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
-.blueicon{
+.blueicon {
   color: $bg-white;
 }
-.homefunc{
-  margin-left: 0px!important;
- padding-left: 16px;
- padding-right: 16px;
+.homefunc {
+  margin-left: 0px !important;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-.widthfunc{
+.widthfunc {
   width: 100%;
   padding-left: 28px;
   padding-right: 28px;
 }
-.marg{
+.marg {
   margin-top: 100px;
   padding-left: 28px;
   padding-right: 28px;
 }
-.padd{
+.padd {
   padding-left: 28px;
   padding-right: 28px;
 }
-.padd1{
+.padd1 {
   padding-left: 28px;
   padding-right: 28px;
 }
-.biggest1{
+.biggest1 {
   // width: 100%!important;
-  max-width: none!important;
+  max-width: none !important;
 }
-.swip1{
-  width: 1800px!important;
+.swip1 {
+  width: 1800px !important;
 }
-.foryouactive{
+.foryouactive {
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
@@ -902,7 +899,7 @@ input[type="range"]::-ms-fill-upper {
   position: absolute;
   top: 95px;
 }
-.for2{
+.for2 {
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
