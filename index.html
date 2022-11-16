@@ -9,128 +9,572 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <nav class="flex justify-between items-center gap4 w-full nav p-6 bord">
-      <div class="flex gap8">
-        <div class="flex items-center gap8">
+      <div class="flex gap2">
+        <div class="flex items-center gap2">
           <div onclick="toggle();">
-            <svg
-              style="cursor: pointer"
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-menu-2"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#000000"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <line x1="4" y1="6" x2="20" y2="6" />
-              <line x1="4" y1="12" x2="20" y2="12" />
-              <line x1="4" y1="18" x2="20" y2="18" />
-            </svg>
+            <div class="tooltip-container">
+              <svg
+                style="cursor: pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-menu-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+              </svg>
+
+              <span class="tooltip">Hide Menu</span>
+            </div>
           </div>
           <img
             src="https://static.canva.com/web/images/c312071b10daa85e10047f326751843d.svg"
             alt="canva"
           />
         </div>
-        <div class="flex gap4 items-center">
-          <button class="flex gap-2 items-cemter justify-center design">
-            Design spotlight
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-selector"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#515154"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <polyline points="16 15 12 19 8 15" />
-            </svg>
-          </button>
-          <button class="flex gap-2 items-cemter justify-center design">
-            Business
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-selector"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#515154"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <polyline points="16 15 12 19 8 15" />
-            </svg>
-          </button>
-          <button class="flex gap-2 items-cemter justify-center design">
-            Education
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-selector"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#515154"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <polyline points="16 15 12 19 8 15" />
-            </svg>
-          </button>
-          <button class="flex gap-2 items-cemter justify-center design">
-            Plans and pricing
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-selector"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#515154"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <polyline points="16 15 12 19 8 15" />
-            </svg>
-          </button>
-          <button class="flex gap-2 items-cemter justify-center design">
-            Learn
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-selector"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#515154"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <polyline points="16 15 12 19 8 15" />
-            </svg>
-          </button>
+        <div class="flex items-center">
+          <div class="relative forhover">
+            <button class="flex gap-2 items-cemter justify-center design">
+              Design spotlight
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-selector"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#515154"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <polyline points="16 15 12 19 8 15" />
+              </svg>
+            </button>
+            <!-- hoversection1 -->
+            <div class="d-p">
+              <div class="design-spot">
+                <div class="flex gap2">
+                  <div
+                    class="flex gap2 p-4"
+                    style="padding-right: 0px !important"
+                  >
+                    <div class="flex flex-dir" style="width: 159px">
+                      <p class="sc">Start creating</p>
+                      <p class="lm mt-4">Logo maker</p>
+                      <p class="lm">Flyer maker</p>
+                      <p class="lm">Banner maker</p>
+                      <p class="lm">Poster maker</p>
+                      <p class="lm">Resume maker</p>
+                      <p class="lm">Invitation maker</p>
+                      <p class="lm">Business card maker</p>
+                      <p class="lm">Video intro maker</p>
+                      <p class="lm">Meme maker</p>
+                    </div>
+                    <div class="mt-10 flex flex-dir" style="width: 120px">
+                      <p class="lm">Collage creating</p>
+                      <p class="lm">Graph maker</p>
+                      <p class="lm">See all</p>
+                    </div>
+                  </div>
+                  <div class="flex gap2 p-4">
+                    <div class="flex flex-dir" style="width: 255px">
+                      <p class="sc">Learn more about top products</p>
+                      <p class="lm mt-4">Presentations</p>
+                      <p class="lm">Whiteboards</p>
+                      <p class="lm">PDF editor</p>
+                      <p class="lm">Graphs</p>
+                      <p class="lm">Websites</p>
+                      <p class="lm">Letterheads</p>
+                      <p class="lm">Planner</p>
+                      <p class="lm">Resumes</p>
+                      <p class="lm">Business cards</p>
+                    </div>
+                    <div class="mt-10 flex flex-dir" style="width: 101px">
+                      <p class="lm">Posts</p>
+                      <p class="lm">Stories</p>
+                      <p class="lm">Instagram</p>
+                      <p class="lm">Facebook</p>
+                      <p class="lm">Twitter</p>
+                      <p class="lm">YouTube</p>
+                      <p class="lm">Video ads</p>
+                      <p class="lm">Video editor</p>
+                      <p class="lm">Photo books</p>
+                    </div>
+                    <div class="mt-10 flex flex-dir" style="width: 101px">
+                      <p class="lm">Photo editor</p>
+                      <p class="lm">Brouchers</p>
+                      <p class="lm">Flyers</p>
+                      <p class="lm">Logos</p>
+                      <p class="lm">Menus</p>
+                      <p class="lm">Posters</p>
+                      <p class="lm">Stickers</p>
+                      <p class="lm">Yard signs</p>
+                      <p class="lm">Cards</p>
+                    </div>
+                    <div class="mt-10 flex flex-dir">
+                      <p class="lm">Calendars</p>
+                      <p class="lm">Invitations</p>
+                      <p class="lm">Labels</p>
+                      <p class="lm">Mugs</p>
+                      <p class="lm">Postercard</p>
+                      <p class="lm">Shirts</p>
+                    </div>
+                  </div>
+                  <div class="b-r"></div>
+                  <div class="p-4">
+                    <img
+                      style="width: 200px"
+                      class="rounded-sm mt-4"
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                      alt="img"
+                    />
+                    <p class="sc sc1">Browse Canva templates</p>
+                    <p class="lm">
+                      Choose from thousands of free <br />
+                      ready-to-use templates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+          <div class="relative forhover">
+            <button class="flex gap-2 items-cemter justify-center design">
+              Business
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-selector"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#515154"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <polyline points="16 15 12 19 8 15" />
+              </svg>
+            </button>
+            <!-- hoversection1 -->
+            <div class="d-p1">
+              <div class="design-spot">
+                <div class="flex gap2">
+                  <div
+                    class="flex flex-dir p-4"
+                    style="width: 250px; padding-right: 0px"
+                  >
+                    <p class="sc">Use cases</p>
+                    <p class="lm mt-4">Create content faster</p>
+                    <p class="lm">Engage your audience</p>
+                    <p class="lm">Build your brand</p>
+                    <p class="lm">Imporve collaborations</p>
+                    <p class="lm">Plan and schedule</p>
+                    <p class="lm">Manage your assests</p>
+                    <p class="lm">Brainstorms and workshops</p>
+                    <p class="lm">Increase desing productivity</p>
+                  </div>
+                  <div
+                    class="flex flex-dir p-4"
+                    style="width: 255px; padding-right: 0px"
+                  >
+                    <p class="sc">Features</p>
+                    <p class="lm mt-4">Invite you team</p>
+                    <p class="lm">Team templates</p>
+                    <p class="lm">Brand management</p>
+                    <p class="lm">Content management</p>
+                    <p class="lm">Productivity</p>
+                    <p class="lm">Brand controls</p>
+                    <p class="lm">SSO and security</p>
+                    <p class="lm">Integrations</p>
+                  </div>
+                  <div
+                    class="flex flex-dir p-4"
+                    style="width: 198px; padding-right: 0px"
+                  >
+                    <p class="sc">Industries</p>
+                    <p class="lm mt-4">Media and publishing</p>
+                    <p class="lm">News room</p>
+                    <p class="lm">Real estate</p>
+                    <p class="lm">Health and fitness</p>
+                    <p class="lm">Technology</p>
+                    <p class="lm">Sports</p>
+                    <p class="lm">Retail</p>
+                    <p class="lm">Startups</p>
+                  </div>
+                  <div class="flex flex-dir p-4">
+                    <p class="sc">Departments</p>
+                    <p class="lm mt-4">Marketing</p>
+                    <p class="lm">Internal communications</p>
+                    <p class="lm">Creative agencies</p>
+                    <p class="lm">Sales</p>
+                  </div>
+                  <div class="b-r"></div>
+                  <div class="p-4">
+                    <div class="flex gap4 items-center hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm mt-4"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Visuals Worksuite</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                    <div class="flex gap4 items-center hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm mt-4"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Case studies</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                    <div class="flex gap4 items-center hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm mt-4"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Canva and Teams</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+          <div class="relative forhover">
+            <button class="flex gap-2 items-cemter justify-center design">
+              Education
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-selector"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#515154"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <polyline points="16 15 12 19 8 15" />
+              </svg>
+            </button>
+            <!-- hoversection1 -->
+            <div class="d-p2">
+              <div class="design-spot">
+                <div class="flex gap2 items-start">
+                  <div class="p-4 mt-4" style="width: 300px">
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Teachers and schools</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Students</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Free teachers resources</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-4 mt-4" style="width: 300px">
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">LMS integrations</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Case studies</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-r"></div>
+                  <div class="p-4">
+                    <img
+                      style="width: 200px"
+                      class="rounded-sm mt-4"
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                      alt="img"
+                    />
+                    <p class="sc sc1">
+                      Become and educations <br />
+                      creator
+                    </p>
+                    <p class="lm">
+                      Choose from thousands of free <br />
+                      ready-to-use templates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+          <div class="relative forhover">
+            <button class="flex gap-2 items-cemter justify-center design">
+              Plans and pricing
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-selector"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#515154"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <polyline points="16 15 12 19 8 15" />
+              </svg>
+            </button>
+            <!-- hoversection1 -->
+            <div class="d-p3">
+              <div class="design-spot">
+                <div class="flex gap2 items-start w-full">
+                  <div class="flex w-full">
+                    <div class="p-4" style="padding-right: 0px">
+                      <img
+                        style="width: 200px"
+                        class="rounded-sm mt-4"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <p class="sc sc1">Free</p>
+                      <p class="lm">
+                        Choose from thousands of free ready-to-use templates.
+                      </p>
+                    </div>
+                    <div class="p-4" style="padding-right: 0px">
+                      <img
+                        style="width: 200px"
+                        class="rounded-sm mt-4"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <p class="sc sc1">Pro</p>
+                      <p class="lm">
+                        Choose from thousands of free ready-to-use templates.
+                      </p>
+                    </div>
+                    <div class="p-4">
+                      <img
+                        style="width: 200px"
+                        class="rounded-sm mt-4"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <p class="sc sc1">Team</p>
+                      <p class="lm">
+                        Choose from thousands of free ready-to-use templates.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="b-r"></div>
+                  <div class="p-4 mt-4">
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">LMS integrations</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Case studies</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="sc px-4">Compare pricing</p>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+          <div class="forhover relative">
+            <button class="flex gap-2 items-cemter justify-center design">
+              Learn
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-selector"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#515154"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <polyline points="16 15 12 19 8 15" />
+              </svg>
+            </button>
+            <!-- hoversection1 -->
+            <div class="d-p2">
+              <div class="design-spot">
+                <div class="flex gap2 items-start">
+                  <div class="p-4 mt-4" style="width: 300px">
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Teachers and schools</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Students</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">Free teachers resources</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-4 mt-4" style="width: 300px">
+                    <div class="flex gap4 items-start hoverimage">
+                      <img
+                        style="width: 100px"
+                        class="rounded-sm"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                        alt="img"
+                      />
+                      <div>
+                        <p class="sc sc1">LMS integrations</p>
+                        <p class="lm">Reimagine the way you work</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-r"></div>
+                  <div class="p-4">
+                    <img
+                      style="width: 200px"
+                      class="rounded-sm mt-4"
+                      src="https://tuk-cdn.s3.amazonaws.com/can-uploader/new1212323.jpg"
+                      alt="img"
+                    />
+                    <p class="sc sc1">
+                      Become and educations <br />
+                      creator
+                    </p>
+                    <p class="lm">
+                      Choose from thousands of free <br />
+                      ready-to-use templates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
         </div>
       </div>
       <div class="flex gap4 items-center">
@@ -163,44 +607,50 @@
             </svg>
           </div>
         </div>
-        <svg
-          class="flex-shrink"
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-device-desktop"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#000000"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <rect x="3" y="4" width="18" height="12" rx="1" />
-          <line x1="7" y1="20" x2="17" y2="20" />
-          <line x1="9" y1="16" x2="9" y2="20" />
-          <line x1="15" y1="16" x2="15" y2="20" />
-        </svg>
-        <svg
-          class="flex-shrink"
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-settings"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#000000"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
-          />
-          <circle cx="12" cy="12" r="3" />
-        </svg>
+        <div class="tooltip-container1">
+          <svg
+            class="flex-shrink"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-device-desktop"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="4" width="18" height="12" rx="1" />
+            <line x1="7" y1="20" x2="17" y2="20" />
+            <line x1="9" y1="16" x2="9" y2="20" />
+            <line x1="15" y1="16" x2="15" y2="20" />
+          </svg>
+          <span class="tooltip1">Download the app</span>
+        </div>
+        <div class="tooltip-container1">
+          <svg
+            class="flex-shrink"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-settings"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
+            />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+          <span class="tooltip1">Accounts Setting</span>
+        </div>
         <div class="w-full">
           <button class="flex gap-2 items-cemter justify-center cdesign2 p-4">
             Create a design
@@ -215,7 +665,7 @@
     </nav>
     <div class="w-full hr"></div>
     <!-- sidebar -->
-    <div class="flex gap4 pr-4 allcontent">
+    <div class="flex gap5 pr-4 allcontent">
       <div id="sider" class="sidewidth">
         <div class="sidebar sidewidth">
           <div
@@ -719,6 +1169,7 @@
           </div>
           <div class="relative search mt-4">
             <input
+              style="border: none"
               class="search p-3 rounded-sm pl10"
               type="text"
               name=""
@@ -748,7 +1199,9 @@
         <div class="relative flex justify-center items-center gap12 mt-8">
           <div class="mt-4 flex justify-center items-center flex-dir">
             <a href="./index.html" class="underline-none">
-              <div class="circle rounded-full flex justify-center items-center">
+              <div
+                class="circleyou rounded-full flex justify-center items-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="icon icon-tabler icon-tabler-star"
@@ -769,8 +1222,13 @@
             <div id="for1" class="foryouactive rounded-sm"></div>
           </div>
           <div class="mt-4 flex justify-center items-center flex-dir">
-            <div class="circle rounded-full flex justify-center items-center">
+            <div
+              onmouseover="whiteshow();"
+              onmouseout="whitehide();"
+              class="circle rounded-full flex justify-center items-center"
+            >
               <svg
+                id="whitesvg"
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-star whiteboard"
                 width="32"
@@ -788,8 +1246,13 @@
             <p class="foryou">Whiteboards</p>
           </div>
           <div class="mt-4 flex justify-center items-center flex-dir">
-            <div class="circle rounded-full flex justify-center items-center">
+            <div
+              onmouseover="presshow();"
+              onmouseout="preshide();"
+              class="circlepres rounded-full flex justify-center items-center"
+            >
               <svg
+                id="pressvg"
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-star present"
                 width="32"
@@ -807,8 +1270,13 @@
             <p class="foryou">Presentations</p>
           </div>
           <div class="mt-4 flex justify-center items-center flex-dir">
-            <div class="circle rounded-full flex justify-center items-center">
+            <div
+              onmouseover="socialshow();"
+              onmouseout="socialhide();"
+              class="circlesocial rounded-full flex justify-center items-center"
+            >
               <svg
+                id="socialsvg"
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-star social"
                 width="32"
@@ -826,8 +1294,13 @@
             <p class="foryou">Social media</p>
           </div>
           <div class="mt-4 flex justify-center items-center flex-dir">
-            <div class="circle rounded-full flex justify-center items-center">
+            <div
+              onmouseover="videoshow();"
+              onmouseout="videohide();"
+              class="circlevideo rounded-full flex justify-center items-center"
+            >
               <svg
+                id="videosvg"
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-star video"
                 width="32"
@@ -845,8 +1318,13 @@
             <p class="foryou">Video</p>
           </div>
           <div class="mt-4 flex justify-center items-center flex-dir">
-            <div class="circle rounded-full flex justify-center items-center">
+            <div
+              onmouseover="webshow();"
+              onmouseout="webhide();"
+              class="circleweb rounded-full flex justify-center items-center"
+            >
               <svg
+                id="websvg"
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-star website"
                 width="32"
@@ -864,7 +1342,9 @@
             <p class="foryou">Websites</p>
           </div>
           <div class="mt-4 flex justify-center items-center flex-dir">
-            <div class="circle rounded-full flex justify-center items-center">
+            <div
+              class="circleyou rounded-full flex justify-center items-center"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-dots"
@@ -888,19 +1368,19 @@
         </div>
         <div id="marg" style="margin-top: 80px" class="relative">
           <p class="wanttry">You might want to try...</p>
-          <div class="caro">
+          <div class="caro homecaro">
             <div
               id="swip"
               class="swiper mySwiper"
               style="margin-left: 0 !important"
             >
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide swiperhome">
                   <div
-                    class="flex justify-between gap4 items-center relative "
+                    class="flex justify-between gap4 items-center relative"
                     style="cursor: pointer"
-                    onclick="show1();"
-                    ondblclick="hide1();"
+                    onmouseover="show1();"
+                    onmouseout="hide1();"
                   >
                     <div aria-label="one">
                       <div
@@ -920,7 +1400,12 @@
                       </p>
                       <p
                         id="unlimited"
-                        style="font-size: 14px; font-weight: 400; display: none"
+                        style="
+                          font-size: 14px;
+                          font-weight: 400;
+                          display: none;
+                          text-align: left;
+                        "
                         class="mt-2 flex justify-start"
                       >
                         Unlimited
@@ -945,30 +1430,39 @@
                       </p>
                       <div
                         class="searchbox rounded flex justify-center items-center absolute"
-                        style="top: -70px; right: -90px"
+                        style="top: -70px; right: -80px"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="icon icon-tabler icon-tabler-search"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="#000000"
-                          fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                          <circle cx="10" cy="10" r="7" />
-                          <line x1="21" y1="21" x2="15" y2="15" />
-                        </svg>
+                        <!-- here -->
+                        <div class="tooltip-container3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-search"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#000000"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                          </svg>
+                          <span class="tooltip3">Browse templates</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="flex justify-between gap4 items-center">
+                <div class="swiper-slide swiperhome">
+                  <div
+                    class="flex justify-between gap4 items-center relative"
+                    style="cursor: pointer"
+                    onmouseover="show2();"
+                    onmouseout="hide2();"
+                  >
                     <div aria-label="one">
                       <div
                         class="box1 flex justify-center items-center p-4 mt-4 rounded-sm"
@@ -983,13 +1477,73 @@
                         style="font-size: 14px; font-weight: 600"
                         class="mt-2 flex justify-start"
                       >
-                        Resume
+                        Whiteboard
                       </p>
+                      <p
+                        id="unlimited2"
+                        style="
+                          font-size: 14px;
+                          font-weight: 400;
+                          display: none;
+                          text-align: left;
+                        "
+                        class="mt-2 flex justify-start"
+                      >
+                        Unlimited
+                      </p>
+                    </div>
+                    <div
+                      id="hidesection2"
+                      class="absolute"
+                      style="display: none"
+                    >
+                      <div class="absolute createblank rounded"></div>
+                      <p
+                        style="
+                          color: white;
+                          opacity: 1;
+                          position: relative;
+                          left: 50%;
+                          top: -10px;
+                        "
+                      >
+                        Create Blank
+                      </p>
+                      <div
+                        class="searchbox rounded flex justify-center items-center absolute"
+                        style="top: -70px; right: -80px"
+                      >
+                        <!-- here -->
+                        <div class="tooltip-container3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-search"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#000000"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                          </svg>
+                          <span class="tooltip3">Browse templates</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="flex justify-between gap4 items-center">
+                <div class="swiper-slide swiperhome">
+                  <div
+                    class="flex justify-between gap4 items-center relative"
+                    style="cursor: pointer"
+                    onmouseover="show3();"
+                    onmouseout="hide3();"
+                  >
                     <div aria-label="one">
                       <div
                         class="box1 flex justify-center items-center p-4 mt-4 rounded-sm"
@@ -1004,13 +1558,73 @@
                         style="font-size: 14px; font-weight: 600"
                         class="mt-2 flex justify-start"
                       >
-                        A4 Document
+                        Whiteboard
                       </p>
+                      <p
+                        id="unlimited3"
+                        style="
+                          font-size: 14px;
+                          font-weight: 400;
+                          display: none;
+                          text-align: left;
+                        "
+                        class="mt-2 flex justify-start"
+                      >
+                        Unlimited
+                      </p>
+                    </div>
+                    <div
+                      id="hidesection3"
+                      class="absolute"
+                      style="display: none"
+                    >
+                      <div class="absolute createblank rounded"></div>
+                      <p
+                        style="
+                          color: white;
+                          opacity: 1;
+                          position: relative;
+                          left: 50%;
+                          top: -10px;
+                        "
+                      >
+                        Create Blank
+                      </p>
+                      <div
+                        class="searchbox rounded flex justify-center items-center absolute"
+                        style="top: -70px; right: -80px"
+                      >
+                        <!-- here -->
+                        <div class="tooltip-container3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-search"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#000000"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                          </svg>
+                          <span class="tooltip3">Browse templates</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="flex justify-between gap4 items-center">
+                <div class="swiper-slide swiperhome">
+                  <div
+                    class="flex justify-between gap4 items-center relative"
+                    style="cursor: pointer"
+                    onmouseover="show4();"
+                    onmouseout="hide4();"
+                  >
                     <div aria-label="one">
                       <div
                         class="box1 flex justify-center items-center p-4 mt-4 rounded-sm"
@@ -1025,13 +1639,73 @@
                         style="font-size: 14px; font-weight: 600"
                         class="mt-2 flex justify-start"
                       >
-                        Presentation
+                        Whiteboard
                       </p>
+                      <p
+                        id="unlimited4"
+                        style="
+                          font-size: 14px;
+                          font-weight: 400;
+                          display: none;
+                          text-align: left;
+                        "
+                        class="mt-2 flex justify-start"
+                      >
+                        Unlimited
+                      </p>
+                    </div>
+                    <div
+                      id="hidesection4"
+                      class="absolute"
+                      style="display: none"
+                    >
+                      <div class="absolute createblank rounded"></div>
+                      <p
+                        style="
+                          color: white;
+                          opacity: 1;
+                          position: relative;
+                          left: 50%;
+                          top: -10px;
+                        "
+                      >
+                        Create Blank
+                      </p>
+                      <div
+                        class="searchbox rounded flex justify-center items-center absolute"
+                        style="top: -70px; right: -80px"
+                      >
+                        <!-- here -->
+                        <div class="tooltip-container3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-search"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#000000"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                          </svg>
+                          <span class="tooltip3">Browse templates</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="flex justify-between gap4 items-center">
+                <div class="swiper-slide swiperhome">
+                  <div
+                    class="flex justify-between gap4 items-center relative"
+                    style="cursor: pointer"
+                    onmouseover="show5();"
+                    onmouseout="hide5();"
+                  >
                     <div aria-label="one">
                       <div
                         class="box1 flex justify-center items-center p-4 mt-4 rounded-sm"
@@ -1046,13 +1720,73 @@
                         style="font-size: 14px; font-weight: 600"
                         class="mt-2 flex justify-start"
                       >
-                        Video
+                        Whiteboard
                       </p>
+                      <p
+                        id="unlimited5"
+                        style="
+                          font-size: 14px;
+                          font-weight: 400;
+                          display: none;
+                          text-align: left;
+                        "
+                        class="mt-2 flex justify-start"
+                      >
+                        Unlimited
+                      </p>
+                    </div>
+                    <div
+                      id="hidesection5"
+                      class="absolute"
+                      style="display: none"
+                    >
+                      <div class="absolute createblank rounded"></div>
+                      <p
+                        style="
+                          color: white;
+                          opacity: 1;
+                          position: relative;
+                          left: 50%;
+                          top: -10px;
+                        "
+                      >
+                        Create Blank
+                      </p>
+                      <div
+                        class="searchbox rounded flex justify-center items-center absolute"
+                        style="top: -70px; right: -80px"
+                      >
+                        <!-- here -->
+                        <div class="tooltip-container3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-search"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#000000"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                          </svg>
+                          <span class="tooltip3">Browse templates</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="flex justify-between gap4 items-center">
+                <div class="swiper-slide swiperhome">
+                  <div
+                    class="flex justify-between gap4 items-center relative"
+                    style="cursor: pointer"
+                    onmouseover="show6();"
+                    onmouseout="hide6();"
+                  >
                     <div aria-label="one">
                       <div
                         class="box1 flex justify-center items-center p-4 mt-4 rounded-sm"
@@ -1067,13 +1801,73 @@
                         style="font-size: 14px; font-weight: 600"
                         class="mt-2 flex justify-start"
                       >
-                        Instagram Post
+                        Whiteboard
                       </p>
+                      <p
+                        id="unlimited6"
+                        style="
+                          font-size: 14px;
+                          font-weight: 400;
+                          display: none;
+                          text-align: left;
+                        "
+                        class="mt-2 flex justify-start"
+                      >
+                        Unlimited
+                      </p>
+                    </div>
+                    <div
+                      id="hidesection6"
+                      class="absolute"
+                      style="display: none"
+                    >
+                      <div class="absolute createblank rounded"></div>
+                      <p
+                        style="
+                          color: white;
+                          opacity: 1;
+                          position: relative;
+                          left: 50%;
+                          top: -10px;
+                        "
+                      >
+                        Create Blank
+                      </p>
+                      <div
+                        class="searchbox rounded flex justify-center items-center absolute"
+                        style="top: -70px; right: -80px"
+                      >
+                        <!-- here -->
+                        <div class="tooltip-container3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-search"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#000000"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                          </svg>
+                          <span class="tooltip3">Browse templates</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="flex justify-between gap4 items-center">
+                <div class="swiper-slide swiperhome">
+                  <div
+                    class="flex justify-between gap4 items-center relative"
+                    style="cursor: pointer"
+                    onmouseover="show7();"
+                    onmouseout="hide7();"
+                  >
                     <div aria-label="one">
                       <div
                         class="box1 flex justify-center items-center p-4 mt-4 rounded-sm"
@@ -1088,13 +1882,73 @@
                         style="font-size: 14px; font-weight: 600"
                         class="mt-2 flex justify-start"
                       >
-                        Poster
+                        Whiteboard
                       </p>
+                      <p
+                        id="unlimited7"
+                        style="
+                          font-size: 14px;
+                          font-weight: 400;
+                          display: none;
+                          text-align: left;
+                        "
+                        class="mt-2 flex justify-start"
+                      >
+                        Unlimited
+                      </p>
+                    </div>
+                    <div
+                      id="hidesection7"
+                      class="absolute"
+                      style="display: none"
+                    >
+                      <div class="absolute createblank rounded"></div>
+                      <p
+                        style="
+                          color: white;
+                          opacity: 1;
+                          position: relative;
+                          left: 50%;
+                          top: -10px;
+                        "
+                      >
+                        Create Blank
+                      </p>
+                      <div
+                        class="searchbox rounded flex justify-center items-center absolute"
+                        style="top: -70px; right: -80px"
+                      >
+                        <!-- here -->
+                        <div class="tooltip-container3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-search"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#000000"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                          </svg>
+                          <span class="tooltip3">Browse templates</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="flex justify-between gap4 items-center">
+                <div class="swiper-slide swiperhome">
+                  <div
+                    class="flex justify-between gap4 items-center relative"
+                    style="cursor: pointer"
+                    onmouseover="show8();"
+                    onmouseout="hide8();"
+                  >
                     <div aria-label="one">
                       <div
                         class="box1 flex justify-center items-center p-4 mt-4 rounded-sm"
@@ -1109,29 +1963,63 @@
                         style="font-size: 14px; font-weight: 600"
                         class="mt-2 flex justify-start"
                       >
-                        Logo
+                        Whiteboard
                       </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex justify-between gap4 items-center">
-                    <div aria-label="one">
-                      <div
-                        class="box1 flex justify-center items-center p-4 mt-4 rounded-sm"
-                      >
-                        <img
-                          class="width rounded"
-                          src="https://media.gq.com/photos/5ad64204c8be07604e8b5f2f/4:3/w_1776,h_1332,c_limit/21-books-GQ-April-2018-041718-3x2.jpg"
-                          alt="books"
-                        />
-                      </div>
                       <p
-                        style="font-size: 14px; font-weight: 600"
+                        id="unlimited8"
+                        style="
+                          font-size: 14px;
+                          font-weight: 400;
+                          display: none;
+                          text-align: left;
+                        "
                         class="mt-2 flex justify-start"
                       >
-                        Facebook Post
+                        Unlimited
                       </p>
+                    </div>
+                    <div
+                      id="hidesection8"
+                      class="absolute"
+                      style="display: none"
+                    >
+                      <div class="absolute createblank rounded"></div>
+                      <p
+                        style="
+                          color: white;
+                          opacity: 1;
+                          position: relative;
+                          left: 50%;
+                          top: -10px;
+                        "
+                      >
+                        Create Blank
+                      </p>
+                      <div
+                        class="searchbox rounded flex justify-center items-center absolute"
+                        style="top: -70px; right: -80px"
+                      >
+                        <!-- here -->
+                        <div class="tooltip-container3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-search"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="#000000"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                          </svg>
+                          <span class="tooltip3">Browse templates</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1166,7 +2054,7 @@
             <div
               class="flex biganounce flex-wrap justify-between items-center p-6"
             >
-              <div class="flex gap4 items-center">
+              <div onclick="bigsec();" class="flex gap4 items-center cursor">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="icon icon-tabler icon-tabler-selector"
@@ -1185,7 +2073,7 @@
                 </svg>
                 <p>The biggest announcements from Canva Create 2022</p>
               </div>
-              <div>
+              <div class="watch-p">
                 <button class="watch flex items-center gap4 p-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1206,7 +2094,10 @@
                 </button>
               </div>
             </div>
-            <div class="flex biganounce justify-start items-center gap4 p-6">
+            <div
+              id="big-inner"
+              class="flex biganounce justify-start items-center gap4 p-6"
+            >
               <div>
                 <img
                   class="rounded"
@@ -1287,30 +2178,35 @@
         <div id="allcontent1" class="mt-10 relative">
           <div class="flex justify-between items-center">
             <p class="recent">Recent designs</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-list"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#000000"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <line x1="9" y1="6" x2="20" y2="6" />
-              <line x1="9" y1="12" x2="20" y2="12" />
-              <line x1="9" y1="18" x2="20" y2="18" />
-              <line x1="5" y1="6" x2="5" y2="6.01" />
-              <line x1="5" y1="12" x2="5" y2="12.01" />
-              <line x1="5" y1="18" x2="5" y2="18.01" />
-            </svg>
+            <div class="tooltip-container4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-list"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="9" y1="6" x2="20" y2="6" />
+                <line x1="9" y1="12" x2="20" y2="12" />
+                <line x1="9" y1="18" x2="20" y2="18" />
+                <line x1="5" y1="6" x2="5" y2="6.01" />
+                <line x1="5" y1="12" x2="5" y2="12.01" />
+                <line x1="5" y1="18" x2="5" y2="18.01" />
+              </svg>
+              <span class="tooltip4">View as list</span>
+            </div>
           </div>
           <div class="flex flex-wrap gap8">
             <div aria-label="one">
-              <div class="box2 p-4 rounded-sm mt-4 flex justify-center">
+              <div
+                class="box2 p-4 rounded-sm mt-4 flex justify-center relative"
+              >
                 <a href="./resume.html">
                   <img
                     class="width"
@@ -1318,11 +2214,34 @@
                     alt="one"
                   />
                 </a>
+                <div class="dot-p">
+                  <div class="resumedot">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-dots"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="5" cy="12" r="1" />
+                      <circle cx="12" cy="12" r="1" />
+                      <circle cx="19" cy="12" r="1" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               <p class="docs3">Beige Clean Lines Resume</p>
             </div>
             <div aria-label="one">
-              <div class="box2 p-4 rounded-sm mt-4 flex justify-center">
+              <div
+                class="box2 p-4 rounded-sm mt-4 flex justify-center relative"
+              >
                 <a href="./resume.html">
                   <img
                     class="width"
@@ -1330,11 +2249,34 @@
                     alt="one"
                   />
                 </a>
+                <div class="dot-p">
+                  <div class="resumedot">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-dots"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="5" cy="12" r="1" />
+                      <circle cx="12" cy="12" r="1" />
+                      <circle cx="19" cy="12" r="1" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               <p class="docs3">Beige Clean Lines Resume</p>
             </div>
             <div aria-label="one">
-              <div class="box2 p-4 rounded-sm mt-4 flex justify-center">
+              <div
+                class="box2 p-4 rounded-sm mt-4 flex justify-center relative"
+              >
                 <a href="./resume.html">
                   <img
                     class="width"
@@ -1342,11 +2284,34 @@
                     alt="one"
                   />
                 </a>
+                <div class="dot-p">
+                  <div class="resumedot">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-dots"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="5" cy="12" r="1" />
+                      <circle cx="12" cy="12" r="1" />
+                      <circle cx="19" cy="12" r="1" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               <p class="docs3">Beige Clean Lines Resume</p>
             </div>
             <div aria-label="one">
-              <div class="box2 p-4 rounded-sm mt-4 flex justify-center">
+              <div
+                class="box2 p-4 rounded-sm mt-4 flex justify-center relative"
+              >
                 <a href="./resume.html">
                   <img
                     class="width"
@@ -1354,11 +2319,34 @@
                     alt="one"
                   />
                 </a>
+                <div class="dot-p">
+                  <div class="resumedot">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-dots"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="5" cy="12" r="1" />
+                      <circle cx="12" cy="12" r="1" />
+                      <circle cx="19" cy="12" r="1" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               <p class="docs3">Beige Clean Lines Resume</p>
             </div>
             <div aria-label="one">
-              <div class="box2 p-4 rounded-sm mt-4 flex justify-center">
+              <div
+                class="box2 p-4 rounded-sm mt-4 flex justify-center relative"
+              >
                 <a href="./resume.html">
                   <img
                     class="width"
@@ -1366,11 +2354,34 @@
                     alt="one"
                   />
                 </a>
+                <div class="dot-p">
+                  <div class="resumedot">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-dots"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="5" cy="12" r="1" />
+                      <circle cx="12" cy="12" r="1" />
+                      <circle cx="19" cy="12" r="1" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               <p class="docs3">Beige Clean Lines Resume</p>
             </div>
             <div aria-label="one">
-              <div class="box2 p-4 rounded-sm mt-4 flex justify-center">
+              <div
+                class="box2 p-4 rounded-sm mt-4 flex justify-center relative"
+              >
                 <a href="./resume.html">
                   <img
                     class="width"
@@ -1378,11 +2389,34 @@
                     alt="one"
                   />
                 </a>
+                <div class="dot-p">
+                  <div class="resumedot">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-dots"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="5" cy="12" r="1" />
+                      <circle cx="12" cy="12" r="1" />
+                      <circle cx="19" cy="12" r="1" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               <p class="docs3">Beige Clean Lines Resume</p>
             </div>
             <div aria-label="one">
-              <div class="box2 p-4 rounded-sm mt-4 flex justify-center">
+              <div
+                class="box2 p-4 rounded-sm mt-4 flex justify-center relative"
+              >
                 <a href="./resume.html">
                   <img
                     class="width"
@@ -1390,11 +2424,34 @@
                     alt="one"
                   />
                 </a>
+                <div class="dot-p">
+                  <div class="resumedot">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-dots"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="5" cy="12" r="1" />
+                      <circle cx="12" cy="12" r="1" />
+                      <circle cx="19" cy="12" r="1" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               <p class="docs3">Beige Clean Lines Resume</p>
             </div>
             <div aria-label="one">
-              <div class="box2 p-4 rounded-sm mt-4 flex justify-center">
+              <div
+                class="box2 p-4 rounded-sm mt-4 flex justify-center relative"
+              >
                 <a href="./resume.html">
                   <img
                     class="width"
@@ -1402,18 +2459,27 @@
                     alt="one"
                   />
                 </a>
-              </div>
-              <p class="docs3">Beige Clean Lines Resume</p>
-            </div>
-            <div aria-label="one">
-              <div class="box2 p-4 rounded-sm mt-4 flex justify-center">
-                <a href="./resume.html">
-                  <img
-                    class="width"
-                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/resume121212121.png"
-                    alt="one"
-                  />
-                </a>
+                <div class="dot-p">
+                  <div class="resumedot">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-dots"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <circle cx="5" cy="12" r="1" />
+                      <circle cx="12" cy="12" r="1" />
+                      <circle cx="19" cy="12" r="1" />
+                    </svg>
+                  </div>
+                </div>
               </div>
               <p class="docs3">Beige Clean Lines Resume</p>
             </div>
@@ -1458,18 +2524,102 @@
         opacity: 0 !important;
       }
     </style>
-      <script>
-        function show1() {
-          console.log("hi");
-          document.getElementById("unlimited").style.display = "block";
-          document.getElementById("hidesection").style.display = "block";
-        }
-        function hide1() {
-          console.log("bye");
-          document.getElementById("unlimited").style.display = "none";
-          document.getElementById("hidesection").style.display = "none";
-        }
-      </script>
+    <script>
+      function show1() {
+        document.getElementById("unlimited").style.display = "block";
+        document.getElementById("hidesection").style.display = "block";
+      }
+      function hide1() {
+        document.getElementById("unlimited").style.display = "none";
+        document.getElementById("hidesection").style.display = "none";
+      }
+      function show2() {
+        document.getElementById("unlimited2").style.display = "block";
+        document.getElementById("hidesection2").style.display = "block";
+      }
+      function hide2() {
+        document.getElementById("unlimited2").style.display = "none";
+        document.getElementById("hidesection2").style.display = "none";
+      }
+      function show3() {
+        document.getElementById("unlimited3").style.display = "block";
+        document.getElementById("hidesection3").style.display = "block";
+      }
+      function hide3() {
+        document.getElementById("unlimited3").style.display = "none";
+        document.getElementById("hidesection3").style.display = "none";
+      }
+      function show4() {
+        document.getElementById("unlimited4").style.display = "block";
+        document.getElementById("hidesection4").style.display = "block";
+      }
+      function hide4() {
+        document.getElementById("unlimited4").style.display = "none";
+        document.getElementById("hidesection4").style.display = "none";
+      }
+      function show5() {
+        document.getElementById("unlimited5").style.display = "block";
+        document.getElementById("hidesection5").style.display = "block";
+      }
+      function hide5() {
+        document.getElementById("unlimited5").style.display = "none";
+        document.getElementById("hidesection5").style.display = "none";
+      }
+      function show6() {
+        document.getElementById("unlimited6").style.display = "block";
+        document.getElementById("hidesection6").style.display = "block";
+      }
+      function hide6() {
+        document.getElementById("unlimited6").style.display = "none";
+        document.getElementById("hidesection6").style.display = "none";
+      }
+      function show7() {
+        document.getElementById("unlimited7").style.display = "block";
+        document.getElementById("hidesection7").style.display = "block";
+      }
+      function hide7() {
+        document.getElementById("unlimited7").style.display = "none";
+        document.getElementById("hidesection7").style.display = "none";
+      }
+      function show8() {
+        document.getElementById("unlimite8").style.display = "block";
+        document.getElementById("hidesectio8").style.display = "block";
+      }
+      function hide8() {
+        document.getElementById("unlimited8").style.display = "none";
+        document.getElementById("hidesection8").style.display = "none";
+      }
+      function whiteshow() {
+        document.getElementById("whitesvg").style.color = "white";
+      }
+      function whitehide() {
+        document.getElementById("whitesvg").style.color = "#21a663";
+      }
+      function presshow() {
+        document.getElementById("pressvg").style.color = "white";
+      }
+      function preshide() {
+        document.getElementById("pressvg").style.color = "#f90";
+      }
+      function socialshow() {
+        document.getElementById("socialsvg").style.color = "white";
+      }
+      function socialhide() {
+        document.getElementById("socialsvg").style.color = "#ff5154";
+      }
+      function videoshow() {
+        document.getElementById("videosvg").style.color = "white";
+      }
+      function videohide() {
+        document.getElementById("videosvg").style.color = "#d269e6";
+      }
+      function webshow() {
+        document.getElementById("websvg").style.color = "white";
+      }
+      function webhide() {
+        document.getElementById("websvg").style.color = "#575efd";
+      }
+    </script>
     <script>
       function toggle() {
         document.getElementById("sider").classList.toggle("tog");
@@ -1481,6 +2631,9 @@
         document.getElementById("biggest").classList.toggle("biggest1");
         document.getElementById("swip").classList.toggle("swip1");
         document.getElementById("for1").classList.toggle("for2");
+      }
+      function bigsec() {
+        document.getElementById("big-inner").classList.toggle("big-inner");
       }
       let scrollPos = 0;
       var nav = document.getElementById("search11");
@@ -1546,6 +2699,5 @@
         },
       });
     </script>
-  
   </body>
 </html>

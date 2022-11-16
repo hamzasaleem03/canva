@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Noto Sans Display", sans-serif;
+}
+
 .main {
   width: 100vw;
   height: 100vh;
@@ -103,8 +107,16 @@
   gap: 8px;
 }
 
+.gap3 {
+  gap: 12px;
+}
+
 .gap4 {
   gap: 16px;
+}
+
+.gap5 {
+  gap: 20px;
 }
 
 .gap8 {
@@ -239,6 +251,14 @@
   z-index: 100;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
+.cursor-not {
+  cursor: not-allowed;
+}
+
 .icon-tabler-selector {
   margin-top: -8px;
 }
@@ -249,6 +269,11 @@
   border: none;
   outline: none;
   cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+.design:hover {
+  background-color: rgba(64, 87, 109, 0.07);
 }
 
 .cdesign {
@@ -259,7 +284,7 @@
   outline: none;
   cursor: pointer;
   border-radius: 5px;
-  width: 185px;
+  width: 192px;
 }
 .cdesign:hover {
   background-color: #9e77f3;
@@ -400,6 +425,61 @@
   cursor: pointer;
 }
 .circle:hover {
+  transition: 1s;
+  background-color: #21a663;
+}
+
+.circlepres {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  cursor: pointer;
+}
+.circlepres:hover {
+  transition: 1s;
+  background-color: #f90;
+}
+
+.circlesocial {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  cursor: pointer;
+}
+.circlesocial:hover {
+  transition: 1s;
+  background-color: #ff5154;
+}
+
+.circlevideo {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  cursor: pointer;
+}
+.circlevideo:hover {
+  transition: 1s;
+  background-color: #d269e6;
+}
+
+.circleweb {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  cursor: pointer;
+}
+.circleweb:hover {
+  transition: 1s;
+  background-color: #575efd;
+}
+
+.circleyou {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  cursor: pointer;
+}
+.circleyou:hover {
   scale: 1.25;
   transition: 1s;
 }
@@ -437,8 +517,28 @@
 
 .wanttry {
   color: #0d1216;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
+  cursor: pointer;
+}
+
+.wanttry1 {
+  cursor: pointer;
+  color: #0d1216;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100px;
+}
+.wanttry1:hover {
+  font-weight: 600;
+}
+
+.vv {
+  width: 50px;
+}
+
+.pp {
+  width: 120px;
 }
 
 .box1 {
@@ -540,6 +640,10 @@
   width: 166px;
   font-weight: 400;
   background-color: rgba(57, 76, 96, 0.15);
+}
+
+.watch-p:hover {
+  background: rgba(64, 87, 109, 0.07);
 }
 
 .docs {
@@ -766,19 +870,22 @@
 
 .search::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #0d1216;
+  color: rgba(30, 41, 51, 0.45);
+  font-weight: 600;
   opacity: 1; /* Firefox */
 }
 
 .search:-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #0d1216;
+  color: rgba(30, 41, 51, 0.45);
+  font-weight: 600;
   opacity: 1; /* Firefox */
 }
 
 .search::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #0d1216;
+  color: rgba(30, 41, 51, 0.45);
+  font-weight: 600;
   opacity: 1; /* Firefox */
 }
 
@@ -1012,7 +1119,7 @@ input[type=range]::-ms-fill-upper {
   background-color: hsla(0deg, 0%, 100%, 0.07);
   position: absolute;
   right: 90px;
-  top: 40px;
+  top: 20px;
   z-index: 200;
   cursor: pointer;
 }
@@ -1026,7 +1133,7 @@ input[type=range]::-ms-fill-upper {
   background-color: hsla(0deg, 0%, 100%, 0.07);
   position: absolute;
   right: 40px;
-  top: 40px;
+  top: 20px;
   z-index: 200;
   cursor: pointer;
 }
@@ -1076,7 +1183,7 @@ input[type=range]::-ms-fill-upper {
   transform: rotate(45deg);
   background: white;
   position: absolute;
-  top: 130px;
+  top: 133px;
 }
 
 .for2 {
@@ -1085,7 +1192,7 @@ input[type=range]::-ms-fill-upper {
   transform: rotate(45deg);
   background: white;
   position: absolute;
-  top: 130px;
+  top: 133px;
 }
 
 .setheight {
@@ -1115,6 +1222,340 @@ input[type=range]::-ms-fill-upper {
 
 .afor {
   padding-bottom: 80px;
+}
+
+.hefect {
+  padding: 10px;
+}
+.hefect:hover {
+  background: hsla(0deg, 0%, 100%, 0.07);
+}
+
+.tooltip-container {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+}
+.tooltip-container:hover {
+  background-color: rgba(64, 87, 109, 0.07);
+}
+
+.tooltip {
+  opacity: 0;
+  z-index: 99;
+  color: #bbb;
+  width: 80px;
+  display: block;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #111;
+  background: rgba(51, 51, 51, 0.9);
+  border: 1px solid rgba(34, 34, 34, 0.9);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  transform: scale(0);
+  position: absolute;
+  right: -35px;
+  bottom: -40px;
+}
+
+.tooltip-container:hover .tooltip,
+a:hover .tooltip {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tooltip-container1 {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+}
+.tooltip-container1:hover {
+  background-color: rgba(64, 87, 109, 0.07);
+}
+
+.tooltip1 {
+  opacity: 0;
+  z-index: 99;
+  color: #bbb;
+  width: 120px;
+  display: block;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #111;
+  background: rgba(51, 51, 51, 0.9);
+  border: 1px solid rgba(34, 34, 34, 0.9);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  transform: scale(0);
+  position: absolute;
+  right: -45px;
+  bottom: -40px;
+}
+
+.tooltip-container1:hover .tooltip1,
+a:hover .tooltip1 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tooltip-container3 {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  top: 2px;
+}
+
+.tooltip3 {
+  opacity: 0;
+  z-index: 99;
+  color: #bbb;
+  width: 120px;
+  display: block;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #111;
+  background: rgba(51, 51, 51, 0.9);
+  border: 1px solid rgba(34, 34, 34, 0.9);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  transform: scale(0);
+  position: absolute;
+  right: -35px;
+  bottom: -40px;
+}
+
+.tooltip-container3:hover .tooltip3,
+a:hover .tooltip3 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tooltip-container4 {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip4 {
+  opacity: 0;
+  z-index: 99;
+  color: #bbb;
+  width: 80px;
+  display: block;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #111;
+  background: rgba(51, 51, 51, 0.9);
+  border: 1px solid rgba(34, 34, 34, 0.9);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  transform: scale(0);
+  position: absolute;
+  right: 0px;
+  bottom: -40px;
+}
+
+.tooltip-container4:hover .tooltip4,
+a:hover .tooltip4 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.homecaro {
+  height: 250px;
+}
+
+.swiperhome {
+  width: 200px !important;
+}
+
+.swipertemp1 {
+  width: 50px !important;
+}
+
+.swipertwen {
+  width: 455px !important;
+}
+
+.swipereighten {
+  width: 210px !important;
+}
+
+.swipersecond {
+  width: 340px !important;
+}
+
+.big-inner {
+  display: none;
+}
+
+.resumedot {
+  height: 30px;
+  width: 30px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.resumedot:hover {
+  background-color: #713adf;
+  color: white;
+}
+
+.resumedot1 {
+  height: 30px;
+  width: 30px;
+  background: #0d1216;
+  color: white;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.dot-p {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+
+.dot-p1 {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  display: none;
+}
+
+.dot-p2 {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  display: none;
+}
+
+.box2:hover .dot-p {
+  display: block;
+}
+
+.box5:hover .dot-p1 {
+  display: block;
+}
+
+.box6:hover .dot-p1 {
+  display: block;
+}
+
+.box7:hover .dot-p1 {
+  display: block;
+}
+
+.box13:hover .dot-p2 {
+  display: block;
+}
+
+.forhover {
+  z-index: 900;
+}
+
+.d-p {
+  top: 30px;
+  position: absolute;
+  display: none;
+}
+
+.d-p1 {
+  top: 30px;
+  left: -150px;
+  position: absolute;
+  display: none;
+}
+
+.d-p2 {
+  top: 30px;
+  left: -300px;
+  position: absolute;
+  display: none;
+}
+
+.d-p3 {
+  top: 30px;
+  left: -380px;
+  position: absolute;
+  display: none;
+}
+
+.design-spot {
+  max-width: calc(100vw - 208px);
+  width: 100%;
+  min-height: 400px;
+  background: white;
+  box-shadow: 0 0 0 1px rgba(64, 87, 109, 0.07), 0 2px 12px rgba(53, 71, 90, 0.2);
+  border-radius: 4px;
+}
+
+.forhover:hover .d-p {
+  display: block !important;
+}
+
+.forhover:hover .d-p1 {
+  display: block !important;
+}
+
+.forhover:hover .d-p2 {
+  display: block !important;
+}
+
+.forhover:hover .d-p3 {
+  display: block !important;
+}
+
+.sc {
+  font-weight: 700;
+  color: #0d1216;
+}
+
+.sc1:hover {
+  text-decoration: underline;
+}
+
+.lm {
+  font-size: 14px;
+  color: rgba(13, 18, 22, 0.86);
+  opacity: 0.9;
+  cursor: pointer;
+  padding: 5px;
+}
+.lm:hover {
+  background-color: rgba(64, 87, 109, 0.07);
+}
+
+.hoverimage {
+  padding: 5px;
+}
+
+.hoverimage:hover {
+  background-color: rgba(64, 87, 109, 0.07);
+}
+
+.b-r {
+  border-right: 1px solid #f2f0ff;
 }
 
 @media (height: 1080px) {
